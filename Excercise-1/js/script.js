@@ -7,7 +7,7 @@ Anthony John Scopacasa
 
 
 /**
-Description of preload
+proload aint doin much here but here are the variables that will control som later stuff
 */
 
 let yposP1 = 200;
@@ -18,6 +18,8 @@ let dX = 250;
 let dY = 250;
 let scoreP1 = 0;
 let scoreP2 = 0;
+let movementX = .5;
+let movementY = 1;
 
 
 function preload() {
@@ -34,9 +36,10 @@ function setup() {
 
 
 /**
-Description of draw()
+controls the moving components of the game like the players and the ball
 */
 function draw() {
+    print(mouseX, mouseY);
     background(0, 200, 200);
     textSize(50);
     text(scoreP1, 100, 100);
@@ -50,14 +53,14 @@ function draw() {
     player1();//rectangle for player 1
     player2();//racatangle for player 2
     if (keyIsPressed === true && key === "w" ){//makes player one go up
-        yposP1--
+        yposP1--;
     }if (keyIsPressed === true && key === "s"){//makes player one go down
         yposP1++
     }if (keyIsPressed === true && key === "p" ){//makes player two go up
         yposP2--
     }if (keyIsPressed === true && key === "l"){//makes player one go down
-       yposP2++
-    } if (scoreP1 == 10) {
+        yposP2++
+    } if (scoreP1 == 10 ) {
         textSize(50);
         text("P1 WINS", width / 4, height / 2);
         //ballMovement = false;
@@ -90,9 +93,21 @@ function player2() {
 }
 
 function ball() {
-    x = lerp(x, dX, .05);
-    y = lerp(y, dY, .05);
+    y = y - movementY;
+    x = x - movementX;
     ellipse(x, y, 40, 40);
+    if (y == 0) {
+        movementY = -1;
+    } else if (y == 500) {
+        movementY = 1;
+    } if (scoreP1 == 10 || scoreP2 == 10) {
+        x = width / 2;
+        y = height / 2;
+    } if (y == yposP1 && x == 40) {
+        movementX = -1; 
+    } else if (y == yposP2 && x == 410) {
+        movementX = 1;
+    }
 }
 
 function mousePressed() {
