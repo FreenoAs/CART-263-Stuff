@@ -88,9 +88,9 @@ function ball() {//ball bounces around the screen
     } if (scoreP1 == 10 || scoreP2 == 10) {//bounces off th top and bottom
         ballX = width / 2;
         ballY = height / 2;
-    } if (ballX == xposP1+40 /* && ballY == yposP2*/) {//bounces off the left and right (the second part is to only bounce off when it hits the players but i cant seem to get that collosion working)
+    } if (ballX == xposP1+40 && ballY == yposP2) {//bounces off the left and right (the second part is to only bounce off when it hits the players but i cant seem to get that collosion working)
         movementX = -1; 
-    } if (ballX == xposP2 /* && ballY == yposP2*/) {
+    } if (ballX == xposP2 && ballY == yposP2) {
         movementX = 1;
     }
 }
