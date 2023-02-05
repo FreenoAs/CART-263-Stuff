@@ -51,6 +51,7 @@ function draw() {
             ball[i].speed = 0;
             blue = 0;
             green = 255;
+            tree[i].move;
         }
         else {
             green = 0;
@@ -61,7 +62,7 @@ function draw() {
             blue = 255;
         }
         if (mouseX <= width / 4 && mouseY >= height / 4) {//makes ball dissasociate with mouse
-            ball[i].x = mouseX + 100;
+            background(0);
         }
         if (mouseX <= width / 1.25 && mouseX > width / 3.5 && mouseY >= height / 1.5) {
             red = 255;
@@ -79,27 +80,13 @@ function draw() {
             }
             for (let i = 0; i < tree.length; i++) {
                 tree[i].fearMouse();
-                tree[i].move();
                 tree[i].display();
-            } if (tree.x >= 200 && tree.x <= 0 && tree.y >= 400 && tree.y <= 100) {
-                tree.x = 50;
-                tree.y = 350;
+            } if (tree.x >= width / 4 && tree.x <= 0 && tree.y >= height / 1.5 && tree.y <= 0) {
+                tree[i].stop();
             }
         }
     }
 }
-
-/*function panic() {
-   
-}
-
-function nervous() {
-   
-}
-
-function smol(){
-    
-}*/
 
 class Particle {
     constructor() {//makes the ball and controls speed and size
@@ -129,7 +116,7 @@ class fallingStars {//i want this to be sweat droplets (intrpreted from https://
         this.y = mouseY - 10;
         this.vx = random(-1, 1);
         this.vy = random(5, 1);
-        this.alpha = 255
+        this.alpha = 100
     }
     update(){
         this.x += this.vx;
@@ -137,7 +124,7 @@ class fallingStars {//i want this to be sweat droplets (intrpreted from https://
         this.alpha--
     }
     offScreen() {
-        return this.alpha < 150;
+        return this.alpha < 50;
     }
     display() {
         fill(100, 100, 170, this.alpha);
@@ -153,10 +140,10 @@ class fallingStars {//i want this to be sweat droplets (intrpreted from https://
     }
 }
 
-class forrest {
+class forrest { //interpreted from class notes
     constructor() {
-      this.x = random(width/4);
-      this.y = random(height/.5);
+      this.x = random(150);
+      this.y = random(100,400);
       this.speed = 20;
       this.diameter = random(50);
       this.thresh = 50;
@@ -167,15 +154,18 @@ class forrest {
       }
     }
     move() {
-        this.newX= this.x+random(-this.speed, this.speed);
-        this.newY= this.y+random(-this.speed, this.speed);
-        this.y =  lerp(this.y, this.newY, 0.1);
-        this.x =  lerp(this.x, this.newX, 0.1);
+        this.y =  lerp(this.y, mouseY, -0.1);
+        this.x =  lerp(this.x, mouseX, -0.1);
+    }
+    stop() {
+        this.y = 0;
+        this.x = 0;
     }
     display() {
       noStroke();
       //drawingContext.filter = 'blur('+String(random(20))+'px)';
-      fill(this.x, this.y, this.diameter);
+      fill(0, this.x, 0);
       ellipse(this.x, this.y, this.diameter);
     }
-  }
+}
+  
