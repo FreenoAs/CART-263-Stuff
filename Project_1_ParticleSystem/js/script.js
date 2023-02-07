@@ -36,7 +36,11 @@ function draw() {
         ball[i].display();
         ball[i].follow();
         if (mouseX <= width / 4 && mouseY <= height / 4) {//makes the ball freak out and red in the top left
+            fill(0);
+            rect(0,0, width, height);
             ball[i].diameter = 100;
+            ball[i].move();
+            ball[i].display();
             ball[i].speed = 100;
             red = 255;
             blue = 0;
@@ -48,21 +52,31 @@ function draw() {
             red = 0;
         }
         if (mouseX >= width / 2 && mouseY <= height / 4) {//makes the ball green and nervous in the top right(add sweat drops)
+            background(255,0,0)
             ball[i].speed = 0;
+            ball[i].display();
             blue = 0;
             green = 255;
-            tree[i].move;
         }
         else {
             green = 0;
         }
         if (mouseX >= width / 1.25 && mouseY >= height / 4) {//smol little guy
+            background(255);
             ball[i].diameter = 5;
+            ball[i].move();
             ball[i].speed = 10;
+            ball[i].display();
             blue = 255;
         }
-        if (mouseX <= width / 4 && mouseY >= height / 4) {//makes ball dissasociate with mouse
-            background(0);
+        if (mouseX <= width / 4 && mouseY >= height / 4) {//forrest area
+            background(0, 150, 200);
+            for (let i = 0; i < tree.length; i++) {
+                tree[i].display();
+                for (let i = 0; i < ball.length; i++) {
+                    ball[i].display();
+                }
+            }
         }
         if (mouseX <= width / 1.25 && mouseX > width / 3.5 && mouseY >= height / 1.5) {
             red = 255;
@@ -80,7 +94,6 @@ function draw() {
             }
             for (let i = 0; i < tree.length; i++) {
                 tree[i].fearMouse();
-                tree[i].display();
             } if (tree.x >= width / 4 && tree.x <= 0 && tree.y >= height / 1.5 && tree.y <= 0) {
                 tree[i].stop();
             }
@@ -101,7 +114,7 @@ class Particle {
     }
     display() {//displays the little guy
         noStroke();
-        fill(red,green,blue);
+        fill(red, green, blue);
         ellipse(this.x, this.y, this.diameter);
     }
     follow() { //makes the lil guy follow the mouse
@@ -146,7 +159,7 @@ class forrest { //interpreted from class notes
       this.y = random(100,400);
       this.speed = 20;
       this.diameter = random(50);
-      this.thresh = 50;
+      this.thresh = 30;
     }
     fearMouse(){ 
         if (dist(this.x, this.y, mouseX, mouseY) <= this.thresh) {
@@ -163,7 +176,6 @@ class forrest { //interpreted from class notes
     }
     display() {
       noStroke();
-      //drawingContext.filter = 'blur('+String(random(20))+'px)';
       fill(0, this.x, 0);
       ellipse(this.x, this.y, this.diameter);
     }
