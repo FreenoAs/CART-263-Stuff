@@ -56,14 +56,9 @@ function draw() {
             ball[i].move();
             ball[i].display();
             ball[i].speed = 100;
-            fill(255);
-            circle(400, 200, 390);
-            fill(255, 0, 0);
-            circle(400, 200, 250);
-            fill(0);
-            circle(400, 200, 225);
-            eyePupil[i].display();
             eyePupil[i].move();
+            eyePupil[i].displayEye();
+            eyePupil[i].display();
             red = 255;
             blue = 0;
         }
@@ -100,13 +95,7 @@ function draw() {
             ball[i].display();
         }
         if (mouseX <= width / 4 && mouseY >= height / 4) {//forrest area
-            background(0, 150, 200, 100);
-            fill(0, 120, 220);
-            quad(0, 0, 710, 0, 710, 410, 400, 200);
-            fill(0, 160, 210);
-            quad(0, 0, 710, 0, 710, 410, 500, 200);
-            fill(0, 200, 250);
-            triangle(400, 0, 710, 0, 710, 400);
+            tree[i].displayFlair();
             for (let i = 0; i < tree.length; i++) {//shows the trees
                 tree[i].display();
                 for (let i = 0; i < ball.length; i++) { //puts the ball ontop of everything else
@@ -221,6 +210,15 @@ class forrest { //interpreted from class notes
       noStroke();
       fill(0, this.x, 0);
       ellipse(this.x, this.y, this.diameter);
+    }
+    displayFlair() {
+        background(0, 150, 200, 100);
+        fill(0, 120, 220);
+        quad(0, 0, 710, 0, 710, 410, 400, 200);
+        fill(0, 160, 210);
+        quad(0, 0, 710, 0, 710, 410, 500, 200);
+        fill(0, 200, 250);
+        triangle(400, 0, 710, 0, 710, 400);
     }
 }
   
@@ -364,5 +362,13 @@ class Pupil {
         noStroke();
         fill(red, green, blue);
         ellipse(this.x, this.y, this.diameter);
+    }
+    displayEye() {
+        fill(255);
+        circle(400, 200, 390);
+        fill(255, 0, 0);
+        circle(400, 200, 250);
+        fill(0);
+        circle(400, 200, 225);
     }
 }
