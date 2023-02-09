@@ -1,3 +1,3 @@
 # Template p5 project
 
-I can see this particale as something that is entirely interactive. On click the particle will react to the specific areas of the screen it approaches, turning red in situations of danger and and exploding of pulsing to express that fear, maybe turning blue and wavy like water when it reaches an "ocean" and turning bright colors. This could mauybe evenm be restricetd to a maze so its as though the particle is physically exploring to it's surroundings and reacting to its journey. 
+The theme I was assigned was curiosity and exploration and as such, the viewer is encouraged to expore the screen with the player particle that will change while moving across the screen. While exploring there are other particle systems that will reveal themselves really encouraging the idea of exploring the map with the tiny little particle you venture with. 
