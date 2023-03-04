@@ -1,0 +1,923 @@
+Name,Game,Gender,Alternate Variation,Title,Weapon,Movement Type
+Alfonse,Heroes,Male,Original,Prince of Askr,Sword,Infantry
+Alfonse,Heroes,Male,Spring,Spring Prince,Axe,Cavalry
+Alfonse,Heroes,Male,New Years,Askran Duo,Blue Tome,Infantry
+Alfonse,Heroes,Male,Valentines,Uplifting Love,Green Tome,Armoured
+Sharena,Heroes,Female,Original,Prince of Askr,Lance,Infantry
+Sharena,Heroes,Female,Spring,Spring Princess,Green Tome,Cavalry
+Anna,Heroes,Female,Original,Commander,Axe,Infantry
+Anna,Heroes,Female,New Years,Wealth-Wisher,Red Bow,Infantry
+Gustav,Heroes,Male,Valentines,Majestic Love,Axe,Armoured
+Gustav,Heroes,Male,Fallen,Sovereign Slain,Axe,Cavalry
+Henriette,Heroes,Female,Valentines,Overflowing Love,Red Tome,Armoured
+Bruno,Heroes,Male,Spring,Masked Hare,Staff,Cavalry
+Bruno,Heroes,Male,Winter,Masked Reveler,Green Tome,Armoured
+Veronica,Heroes,Female,Brave,Brave Princess,Staff,Cavalry
+Veronica,Heroes,Female,Spring,Spring Princess,Green Tome,Flier
+Veronica,Heroes,Female,Pirate,Harmonic Pirate,Axe,Cavalry
+Veronica,Heroes,Female,Valentines,Bestowed Love,Blue Tome,Cavalry
+Veronica,Heroes,Female,Legendary,Princess Rising,Red Tome,Cavalry
+Nifl,Heroes,Female,Original,God of Ice,Blue Dragon,Cavalry
+Nifl,Heroes,Female,Summer,Tropical Ice God,Colorless Dragon,Cavalry
+Fjorm,Heroes,Female,Legendary,Princess of Ice,Lance,Infantry
+Fjorm,Heroes,Female,New Years,New Traditions,Green Bow,Flier
+Fjorm,Heroes,Female,Bridal,Bride of Rime,Staff,Flier
+Fjorm,Heroes,Female,Ascended,Ice Ascendant,Axe,Armoured
+Gunnthra,Heroes,Female,Legendary,Voice of Dreams,Green Tome,Cavalry
+Gunnthra,Heroes,Female,New Years,Year’s First Dream,Sword,Flier
+Gunnthra,Heroes,Female,Summer,Beaming Smile,Colorless Dagger,Cavalry
+Hrid,Heroes,Male,Original,Icy Blade,Sword,Cavalry
+Hrid,Heroes,Male,New Years,Resolute Prince,Sword,Flier
+Ylgr,Heroes,Female,Original,Fresh Snowfall,Blue Dagger,Infantry
+Ylgr,Heroes,Female,Summer,Breaking the Ice,Axe,Infantry
+Muspell,Heroes,Male,Original,Flame God,Red Dragon,Cavalry
+Muspell,Heroes,Male,Festival of Flame,Raging Inferno,Colorless Dragon,Cavalry
+Surtr,Heroes,Male,Original,Ruler of Flame,Axe,Armoured
+Surtr,Heroes,Male,Pirate,Pirate of Red Sky,Lance,Armoured
+Laegjarn,Heroes,Female,Original,Sheathed Steel,Sword,Flier
+Laegjarn,Heroes,Female,New Years,New Experiences,Lance,Cavalry
+Laegjarn,Heroes,Female,Summer,Burning Sun,Blue Tome,Flier
+Laegjarn,Heroes,Female,Ascended,Flame Ascendant,Colorless Bow,Cavalry
+Laegjarn,Heroes,Female,Ninja,Flame and Frost,Blue Bow,Flier
+Laevatein,Heroes,Female,Original,Searing Steel,Sword,Infantry
+Laevatein,Heroes,Female,New Years,Kumade Warrior ,Staff,Cavalry
+Laevatein,Heroes,Female,Summer,Bonfire’s Blaze,Green Tome,Flier
+Laevatein,Heroes,Female,Ninja,Ninja of Muspell,Axe,Flier
+Helbindi,Heroes,Male,Original,Savage Scourge,Axe,Infantry
+Helbindi,Heroes,Male,Summer,Seaside Scourge,Sword,Infantry
+Hel,Heroes,Female,Mythic,Death Sovereign ,Axe,Flier
+Eir,Heroes,Female,Mythic,Merciful Death,Colorless Dagger,Flier
+Eir,Heroes,Female,New Years,Renewed Life,Red Dagger,Flier
+Eir,Heroes,Female,Ascended,Life Ascnedant,Green Dagger,Cavalry
+Ymir,Heroes,Female,Original,Life-Mother,Green Dragon,Cavalry
+Lif,Heroes,Male,Mythic,Lethal Swordsman,Sword,Infantry
+Lif ,Heroes,Male,Valentines,Undying Ties Duo,Red Tome,Cavalry
+Lif,Heroes,Male,Rearmed,Arcane Blade,Sword,Cavalry
+Thrasir,Heroes,Female,Mythic,Omnicical Witch,Green Tome,Infantry
+Ganglot,Heroes,Female,Rearmed,Death Anew,Axe,Infantry
+Thorr,Heroes,Female,Mythic,War God,Axe,Flier
+Thorr,Heroes,Female,Summer,Sun-Kissed Gods,Blue Tome,Flier
+Loki,Heroes,Female,Original,The Trickster,Staff,Infantry
+Loki,Heroes,Female,Spring,Spring Trickster,Colorless Bow,Flier
+Peony,Heroes,Female,Mythic,Sweet Dream,Blue Tome,Flier
+Peony ,Heroes,Female,New Years,Alfar Dream Duo,Green Tome,Flier
+Mirabilis,Heroes,Female,Mythic,Daydream,Sword,Flier
+Mirabilis,Heroes,Female,Winter,Sugarplum Vision,Blue Dagger,Flier
+Plumaria,Heroes,Female,Mythic,Lewd Dream,Red Tome,Flier
+Plumaria,Heroes,Female,New Years,Temptation Anew,Colorless Bow,Flier
+Freyr,Heroes,Male,Summer,Estival Dreams,Red Beast,Cavalry
+Triandra,Heroes,Female,Mythic,Nightmare,Green Tome,Flier
+Freyja,Heroes,Female,Mythic,Lady of Nightmare,Green Beast,Cavalry
+Freyja,Heroes,Female,Summer,Fleeting Summer,Colorless Beast,Cavalry
+Reginn,Heroes,Female,Mythic,Bearing Hope,Sword,Cavalry
+Reginn,Heroes,Female,New Years,Bearing Dawn,Blue Tome,Cavalry
+Otr,Heroes,Male,Mythic,Kingsbrother,Axe,Cavalry
+Fafnir,Heroes,Male,New Years,Fresh Ambition,Red Dagger,Cavalry
+Dagr,Heroes,Female,Mythic,Sun’s Radiance,Axe,Infantry
+Dagr,Heroes,Female,New Years,New Year Joiner,Green Bow,Flier
+Nott,Heroes,Female,Mythic,Moon’s Elegance,Lance,Infantry
+Eitri,Heroes,Female,Original,Youthful Sage,Green Tome,Flier
+Askr,Heroes,Male,Mythic,God of Openness,Colorless Beast,Infantry
+Askr,Heroes,Male,New Years,Renewed Gods,Colorless Tome,Infantry
+Ash,Heroes,Female,Mythic,Retainer to Askr,Colorless Beast,Infantry
+Ash,Heroes,Female,New Years,Earnest Greetings,Blue Beast,Infantry
+Embla,Heroes,Female,Mythic,God of Closure,Red Beast,Flier
+Elm,Heroes,Male,New Years,Resolute Grouch,Green Beast,Flier
+Letizia,Heroes,Female,Original,Curse Director,Green Tome,Cavalry
+Seithr,Heroes,Female,Mythic,Goddess of Hope,Green Tome,Cavalry
+Marth ,Mystery,Male,Original,Altean Prince,Sword,Infantry
+Marth ,Mystery,Male,Bridal,Altean Groom,Axe,Cavalry
+Marth ,Mystery,Male,Legendary,Hero-King,Sword,Infantry
+Marth ,Mystery,Male,Winter,Royal Altean Duo,Colorless Bow,Armoured
+Marth ,Mystery,Male,Young,Legacied Hero,Sword,Infantry
+Marth ,Mystery,Male,Brave,Prince of Light,Sword,Infantry
+Kris,Mystery,Male,Original,Unknown Hero,Sword,Infantry
+Kris,Mystery,Male,Plegian,Ardent Firebrand,Axe,Cavalry
+Kris,Mystery,Female,Original,Unsung Hero,Lance,Infantry
+Elice,Mystery,Female,Original,Altean Princess,Staff,Infantry
+Jagen,Mystery,Male,Original,Veteran Knight,Lance,Cavalry
+Cain,Mystery,Male,Original,The Bull,Sword,Cavalry
+Abel,Mystery,Male,Original,The Panther,Lance,Cavalry
+Draug,Mystery,Male,Original,Gentle Giant,Sword,Armoured
+Gordin,Mystery,Male,Original,Altean Archer,Colorless Bow,Infantry
+Luke,Mystery,Male,Original,Rowdy Squire,Sword,Cavalry
+Roderick,Mystery,Male,Original,Steady Squire,Lance,Cavalry
+Norne,Mystery,Female,Original,The Volunteer,Colorless Bow,Infantry
+Norne,Mystery,Female,Summer,Seaside Volunteer,Lance,Infantry
+Caeda,Mystery,Female,Original,Tally’s Heart,Sword,Flier
+Caeda,Mystery,Female,Bridal,Tally’s Bride,Blue Tome,Infantry
+Caeda ,Mystery,Female,Young,Princess of Talys,Sword,Flier
+Caeda,Mystery,Female,Summer,Sea-Blossom Pair,Axe,Cavalry
+Caeda,Mystery,Female,Legendary,Beloved Queen,Lance,Flier
+Ogma,Mystery,Male,Original,Loyal Blade,Sword,Infantry
+Ogma,Mystery,Male,Summer,Blade on Leave,Lance,Infantry
+Barst,Mystery,Male,Original,The Hatchet,Axe,Infantry
+Darros,Mystery,Male,Pirate,Seawalker,Axe,Infantry
+Nyna,Mystery,Female,Original,The Last Princess,Staff,Infantry
+Linde,Mystery,Female,Original,Light Mage,Blue Tome,Infantry
+Linde,Mystery,Female,Summer,Summer Rays,Colorless Dagger,Cavalry
+Linde,Mystery,Female,Khadein,Bound by Fate,Red Tome,Cavalry
+Jeorge,Mystery,Male,Original,Perfect Shot,Colorless Bow,Infantry
+Astram,Mystery,Male,Original,Midia’s Hero,Sword,Infantry
+Michalis,Mystery,Male,Original,Ambitious King,Axe,Flier
+Minerva,Mystery,Female,Original,Red Dragon,Axe,Flier
+Minerva,Mystery,Female,Young,Princess-Knight,Axe,Flier
+Minerva,Mystery,Female,Spring,Verdant Dragon,Lance,Cavalry
+Maria,Mystery,Female,Original,Minerva’s Sister,Staff,Infantry
+Maria,Mystery,Female,Spring,Sunny Smile,Axe,Flier
+Palla,Mystery,Female,Original,Eldest Whitewing,Sword,Flier
+Palla,Mystery,Female,Spring,Eldest Bun-Bun,Red Dagger,Flier
+Palla,Mystery,Female,Young,Sisterly Trie,Lance,Flier
+Catria,Mystery,Female,Original,Middle Whitewing,Lance,Flier
+Catria,Mystery,Female,Spring,Spring Whitewing,Blue Tome,Cavalry
+Est,Mystery,Female,Original,Junior  Whitewing,Lance,Flier
+Est,Mystery,Female,Spring,Springtime Flier,Blue Tome,Flier
+Julian,Mystery,Male,Original,Tender Thief,Colorless Dagger,Infantry
+Lena,Mystery,Female,Original,Tender Angel,Staff,Infantry
+Matthis,Mystery,Male,Original,Brother to Lena,Lance,Cavalry
+Rickard,Mystery,Male,Thief,Carefree Culprit,Sword,Flier
+Merric,Mystery,Male,Original,Wind Mage,Green Tome,Infantry
+Merric,Mystery,Male,Young,Changing Winds,Green Tome,Infantry
+Hardin,Mystery,Male,Fallen,Dark Emperor,Lance,Armoured
+Hardin,Mystery,Male,Original,The Coyote,Lance,Cavalry
+Wolf,Mystery,Male,Original,Coyote’s Loyal,Colorless Bow,Cavalry
+Sedgar,Mystery,Male,Original,Coyote’s Dutiful,Green Bow,Cavalry
+Vyland,Mystery,Male,Original,Coyote’s Justice,Axe,Cavalry
+Roshea,Mystery,Male,Original,Coyote's Faithful,Lance,Cavalry
+Camus,Mystery,Male,Original,Sable Knight,Lance,Cavalry
+Sirius,Mystery,Male,Original,Mysterious Knight,Lance,Cavalry
+Sheena ,Mystery,Female,Original,Princess of Gra,Axe,Armoured
+Tiki,Mystery,Female,Original,Dragon Scion,Red Dragon,Infantry
+Tiki,Mystery,Female,Summer,Beachside Scion,Red Dragon,Flier
+Tiki,Mystery,Female,Legendary,Legendary Dragon,Blue Dragon,Armoured
+Tiki,Mystery,Female,Fallen,Torpid Dragon,Colorless Dragon,Armoured
+Tiki,Mystery,Female,Halloween,Harmonic Hope,Blue Dragon,Flier
+Tiki,Mystery,Female,Ascended,Awakened Blood,Red Dragon,Infantry
+Nagi,Mystery,Female,Original,Dragon Avatar,Green Dragon,Armoured
+Gotoh,Mystery,Male,Mythic,White Sage,Colorless Tome,Infantry
+Xane,Mystery,Male,Halloween,Autumn Trickster,Colorless Tome,Infantry
+Xane,Mystery,Male,Hatari,Desert Mirage,Staff,Infantry
+Bantu,Mystery,Male,Original,Tiki’s Guardian,Red Dragon,Infantry
+Erimiya,Mystery,Female,Original,Bishop of Woe,Staff,Infantry
+Katarina,Mystery,Female,Original,Wayward One,Red Tome,Infantry
+Katarina,Mystery,Female,Plegian,Torchlit Wanderer,Blue Tome,Flier
+Clarisse,Mystery,Female,Original,Sniper in the Dark,Colorless Bow,Infantry
+Legion,Mystery,Male,Original,Masked Maniac,Axe,Infantry
+Navarre,Mystery,Male,Original,Scarlet Sword,Sword,Infantry
+Navarre,Mystery,Male,Ninja,Scarlet Ninja,Lance,Infantry
+Phina,Mystery,Female,Original,Roving Dancer,Sword,Infantry
+Wrys,Mystery,Male,Original,Kindly Priest,Staff,Infantry
+Athena,Mystery,Female,Original,Borderland Sword,Sword,Infantry
+Malice,Mystery,Female,Original,Deft Sellsword,Sword,Infantry
+Naga,Mystery,Female,Halloween,Harvest Divinity,Colorless Dragon,Flier
+Medeus,Mystery,Male,Mythic,Earth-Dragon Kind,Colorless Dragon,Infantry
+Gharnef,Mystery,Male,Original,Dark Pontifex,Red Tome,Infantry
+Alm,Valentia,Male,Original,Hero of Prophecy,Sword,Infantry
+Alm,Valentia,Male,Legendary,Saint-King,Colorless Bow,Infantry
+Alm,Valentia,Male,Brave,Imperial Ascent ,Sword,Infantry
+Alm,Valentia,Male,Valentines,Lovebird Duo,Axe,Infantry
+Lukas,Valentia,Male,Original,Sharp Soldier,Lance,Infantry
+Lukas,Valentia,Male,Picnic,Buffet for One,Lance,Armoured
+Gray,Valentia,Male,Original,Wry Comrade,Sword,Infantry
+Tobin,Valentia,Male,Original,The Clueless One,Sword,Infantry
+Kliff,Valentia,Male,Original,Curious Spirit,Blue Tome,Infantry
+Faye,Valentia,Female,Original,Devoted Heart,Colorless Bow,Infantry
+Faye,Valentia,Female,Valentines,Drawn Heartstring,Colorless Bow,Armoured
+Silque,Valentia,Female,Original,Adherent of Mila,Staff,Infantry
+Silque,Valentia,Female,Valentines,Selfless Cleric,Staff,Cavalry
+Clair,Valentia,Female,Original,Highborn Flier,Lance,Flier
+Clive,Valentia,Male,Original,Idealistic Knight,Lance,Cavalry
+Forsyth,Valentia,Male,Original,Loyal Lieutenant ,Lance,Armoured
+Python,Valentia,Male,Original,Apathetic Archer,Green Bow,Cavalry
+Celica,Valentia,Female,Original,Caring Princess,Red Tome,Infantry
+Celica,Valentia,Female,Fallen,Imprisoned Soul,Sword,Infantry
+Celica,Valentia,Female,Brave,Warrior Priestess,Sword,Infantry
+Celica,Valentia,Female,Legendary,Queen of Valentia,Green Tome,Infantry
+Celica,Valentia,Female,Ascended,Valentia’s Hope,Colorless Tome,Infantry
+Mae,Valentia,Female,Original,Bundle of Energy,Blue Tome,Infantry
+Boey,Valentia,Male,Original,Skillful Survivor,Green Tome,Infantry
+Genny,Valentia,Female,Original,Endearing Ally,Staff,Infantry
+Genny,Valentia,Female,Picnic,Dressed with Care,Staff,Cavalry
+Saber,Valentia,Male,Original,Driven Mercenary,Sword,Infantry
+Valbar,Valentia,Male,Original,Open and Honest,Lance,Armoured
+Kamui,Valentia,Male,Original,Wandering Blade,Sword,Infantry
+Leon,Valentia,Male,Original,True of Heart,Colorless Bow,Infantry
+Mathilda,Valentia,Female,Original,Legendary Knight,Lance,Cavalry
+Luthier,Valentia,Male,Original,Odd Wayfarer,Green Tome,Infantry
+Luthier,Valentia,Male,Spring,Spring Hopes,Lance,Cavalry
+Delthea,Valentia,Female,Original,Free Spirit,Blue Tome,Infantry
+Delthea,Valentia,Female,Fallen,Tatarrah’s Puppet,Blue Tome,Infantry
+Delthea,Valentia,Female,Spring,Prodigy in Bloom,Blue Tome,Cavalry
+Palla,Valentia,Female,Original,Kind Eldest Sister,Sword,Flier
+Catria,Valentia,Female,Original,Mild Middle Sister,Sword,Flier
+Catria,Valentia,Female,Bridal,Azure Wing Pair,Axe,Flier
+Est ,Valentia,Female,Original,Sweet Baby Sis,Lance,Flier
+Atlas,Valentia,Male,Original,Forest Muscle,Axe,Infantry
+Sonya,Valentia,Female,Original,Vengeful Mage,Green Tome,Infantry
+Sonya,Valentia,Female,Spring,Dazzling Rabbits,Green Tome,Flier
+Deen,Valentia,Male,Hatari,Bladed Sandstorm,Colorless Dagger,Cavalry
+Tatiana,Valentia,Female,Original,Devoted Saint,Blue Tome,Infantry
+Zeke,Valentia,Male,Original,Past Unknown,Lance,Cavalry
+Conrad,Valentia,Male,Original,Masked Knight,Lance,Cavalry
+Conrad,Valentia,Male,Valentines,Unmasked Knight,Sword,Cavalry
+Rudolf,Valentia,Male,Valentines,Emperor of Rigel,Lance,Armoured
+Berkut,Valentia,Male,Original,Prideful Prince,Lance,Cavalry
+Berkut,Valentia,Male,Fallen,Purgatorial Prince ,Lance,Cavalry
+Berkut,Valentia,Male,Soiree,Debonair Noble,Lance,Infantry
+Rinea,Valentia,Female,Soiree,Reminiscent Belle,Blue Tome,Infantry
+Fernand,Valentia,Male,Original,Traitorous Knight,Lance,Cavalry
+Duma,Valentia,Male,Mythic,God of Strength,Colorless Dragon,Armoured
+Duma,Valentia,Male,Halloween,Strength and Love,Red Dragon,Armoured
+Mila,Valentia,Female,Mythic,Goddess of Love,Colorless Dragon,Infantry
+Brigand Boss,Valentia,Male,Original,Known Criminal,Axe,Infantry
+Sigurd,Genealogy ,Male,Original,Holy Knight,Sword,Cavalry
+Sigurd,Genealogy ,Male,Masquerade,Destined Duo,Red Tome,Cavalry
+Sigurd,Genealogy ,Male,Legendary,Fated Holy Knight,Sword,Cavalry
+Arden,Genealogy ,Male,Original,Strong and Tough,Sword,Armoured
+Brigid,Genealogy ,Female,Pirate,Orgahil Pirate,Red Bow,Infantry
+Arvis,Genealogy ,Male,Original,Emperor of Flame,Red Tome,Infantry
+Azelle,Genealogy ,Male,Original,Youthful Flame,Red Tome,Infantry
+Tailtiu,Genealogy ,Female,Original,Thunder Noble,Blue Tome,Infantry
+Lex,Genealogy ,Male,Original,Young Blade,Axe,Cavalry
+Quan,Genealogy ,Male,Original,Luminous Lancer,Lance,Cavalry
+Quan,Genealogy ,Male,Masquerade,Lightfoot Prince,Blue Bow,Flier
+Ethlyn,Genealogy ,Female,Original,Spirited Princess,Staff,Cavalry
+Ethlyn,Genealogy ,Female,Masquerade,Glimmering Lady,Colorless Dagger,Flier
+Ayra,Genealogy ,Female,Original,Astra’s Wielder,Sword,Infantry
+Jamke,Genealogy ,Male,Original,Prince of Verdant,Colorless Bow,Infantry
+Lewyn,Genealogy ,Male,Original,Guiding Breeze,Green Tome,Infantry
+Lewyn,Genealogy ,Male,Scion,Wind-Song Scion,Blue Tome,Infantry
+Annand,Genealogy ,Female,Original,Knight-Defender,Sword,Flier
+Dithorba,Genealogy ,Female,Original,Cutting Knight,Lance,Flier
+Erinys,Genealogy ,Female,Original,Earnest Knight,Lance,Flier
+Eldigan,Genealogy ,Male,Original,Lionheart,Sword,Cavalry
+Eldigan,Genealogy ,Male,Masquerade,Strutting Lion,Lance,Flier
+Lachesis,Genealogy ,Female,Original,Lionheart’s Sister,Staff,Infantry
+Lachesis,Genealogy ,Female,Masquerade,Ballroom Bloon,Green Dagger,Flier
+Deirdre,Genealogy ,Female,Original,Lade of the Forrest,Green Tome,Infantry
+Deirdre,Genealogy ,Female,Legendary,Fated Saint,Blue Tome,Infantry
+Silvia,Genealogy ,Female,Original,Traveling Dancer,Sword,Infantry
+Seliph,Genealogy ,Male,Original,Heir of Light,Sword,Infantry
+Seliph,Genealogy ,Male,Legendary,Scion of Light,Sword,Cavalry
+Seliph,Genealogy ,Male,Brave,Enduring Legacy,Sword,Cavalry
+Larcei,Genealogy ,Female,Original,Keen Kin,Sword,Infantry
+Larcei,Genealogy ,Female,Scion,Scion of Astra,Axe,Infantry
+Shannan,Genealogy ,Male,Original,Wielder of Astra,Sword,Infantry
+Scathach,Genealogy ,Male,Original,Astra’s Wake,Sword,Infantry
+Arthur,Genealogy ,Male,Original,Furious Mage,Green Tome,Infantry
+Tine,Genealogy ,Female,Original,Rumbling Thunder,Colorless Tome,Infantry
+Julia,Genealogy ,Female,Original,Naga’s Blood,Green Tome,Infantry
+Julia,Genealogy ,Female,Legendary,Crusader of Light,Blue Tome,Infantry
+Julia,Genealogy ,Female,Fallen,Heart Usurped,Red Tome,Infantry
+Julia,Genealogy ,Female,Scion,Scion of the Saint,Red Tome,Flier
+Ares,Genealogy ,Male,Original,Black Knight,Sword,Cavalry
+Lene,Genealogy ,Female,Original,Yearning Dancer,Sword,Infantry
+Ced,Genealogy ,Male,Original,Hero on the Wind,Green Tome,Infantry
+Travant,Genealogy ,Male,Original,King of Thracia,Lance,Flier
+Altena,Genealogy ,Female,Original,Luminous Rider,Lance,Flier
+Julius,Genealogy ,Male,Original,Scion of Darkness,Red Tome,Infantry
+Ishtar,Genealogy ,Female,Original,Thunder Goddess,Blue Tome,Infantry
+Ishtar,Genealogy ,Female,Ascended,Echoing Thunder,Blue Tome,Infantry
+Hilda,Genealogy ,Female,Original,Queen of Friege,Red Tome,Infantry
+Ullr,Genealogy ,Female,Mythic,The Bowmaster,Blue Bow,Infantry
+Leif,Thracia,Male,Original,Prince of Leonster,Sword,Infantry
+Leif,Thracia,Male,Legendary,Unifier of Thracia,Colorless Bow,Cavalry
+Leif,Thracia,Male,Scion,Destined Scions,Colorless Bow,Cavalry
+Finn,Thracia,Male,Original,Lance of Legend,Lance,Cavalry
+Nanna,Thracia,Female,Original,Nordion Princess,Staff,Cavalry
+Nanna,Thracia,Female,Scion,Mystletainn Scion,Staff,Flier
+Nanna,Thracia,Female,Legendary,Beloved Princess,Sword,Cavalry
+Eyvel,Thracia,Female,Original,Mistress of Fiana,Sword,Infantry
+Mareeta,Thracia,Female,Fallen,The Blade’s Pawn,Sword,Infantry
+Mareeta,Thracia,Female,Original,Sword of Stars,Sword,Infantry
+Mareeta,Thracia,Female,Ascended,Astra Awakened,Sword,Infantry
+Osian,Thracia,Male,Original,Scolded Soldier,Axe,Infantry
+Tanya,Thracia,Female,Original,Dagdar’s Kid,Colorless Bow,Infantry
+August,Thracia,Male,Original,Astute Tactician,Staff,Infantry
+Asbel,Thracia,Male,Original,Windswept Youth,Green Tome,Infantry
+Ronan,Thracia,Male,Original,Villager of Iz,Blue Bow,Infantry
+Miranda,Thracia,Female,Original,Willful Princess,Red Tome,Infantry
+Karin,Thracia,Female,Original,Driven Knight,Lance,Flier
+Reinhardt,Thracia,Male,Original,Thunder’s Fist,Blue Tome,Cavalry
+Reinhardt,Thracia,Male,He has a sword now,Thunder’s Sword,Sword,Cavalry
+Reinhardt,Thracia,Male,Soiree,Lightning’s Rondo,Green Tome,Flier
+Olwen,Thracia,Female,Original,Blue Mage Knight,Blue Tome,Cavalry
+Olwen ,Thracia,Female,Tome green now,Righteous Knight,Green Tome,Cavalry
+Saias,Thracia,Male,Original,Bishop of Flame,Blue Tome,Infantry
+Veld,Thracia,Male,Original,Manfroy’s Rock,Red Tome,Infantry
+Sara,Thracia,Female,Original,Lady of Loptr,Staff,Infantry
+Salem,Thracia,Male,Original,Dark Sage,Red Tome ,Infantry
+Lifis,Thracia,Male,Pirate,Terror of Iz,Axe,Infantry
+Galzus,Thracia,Male,Original,Dark Blade of Od,Sword,Infantry
+Ishtar,Thracia,Female,Soiree,Thunder’s Waltz,Red Tome,Flier
+Kempf,Thracia,Male,Original,Conniving General,Sword,Cavalry
+Roy,Binding,Male,Original,Young Lion,Sword,Infantry
+Roy,Binding,Male,Brave,Brave Lion,Sword,Cavalry
+Roy,Binding,Male,Valentines,Youthful Gifts,Colorless Bow,Cavalry
+Roy,Binding,Male,Legendary,Blazing Lion,Sword,Infantry
+Roy,Binding,Male,Bridal,Blazing Bachelors ,Axe,Cavalry
+Wolt,Binding,Male,Summer,Sunbeam Archer,Green Bow,Cavalry
+Merlinus,Binding,Male,Original,Pherae’s Clerk,Colorless Dagger,Cavalry
+Lilina,Binding,Female,Original,Delightful Noble,Red Tome,Infantry
+Lilina,Binding,Female,Valentines,Blush of Youth,Green Tome,Cavalry
+Lilina,Binding,Female,Summer,Beachside Bloom,Red Dagger,Cavalry
+Lilina,Binding,Female,Legendary,Firelight Leader,Red Tome,Cavalry
+Lilina,Binding,Female,Bridal,Beaming Bride,Blue Tome,Cavalry
+Gwendolyn,Binding,Female,Original,Adorable Knight,Lance,Armoured
+Lugh,Binding,Male,Original,Anima Child,Green Tome,Infantry
+Raigh,Binding,Male,Original,Dark Child,Red Tome,Infantry
+Chad,Binding,Male,Original,Lycian Wildcat,Colorless Dagger,Infantry
+Perceval,Binding,Male,Original,Knightly Ideal,Lance,Cavalry
+Cecilia,Binding,Female,Original,Etrurian General,Green Tome,Cavalry
+Cecilia,Binding,Female,Winter,Festive Instructor,Colorless Dagger,Armoured
+Cecilia,Binding,Female,Bridal,Etrurian Bride ,Red Tome,Cavalry
+Klein,Binding,Male,Original,Silver Nobleman,Colorless Bow,Infantry
+Clarine,Binding,Female,Original,Refined Noble,Staff,Infantry
+Zephiel,Binding,Male,Original,The Liberator,Sword,Armoured
+Brunnya,Binding,Female,Original,Devoted General,Blue Tome,Infantry
+Narcian,Binding,Male,Original,Wyvern General,Axe,Flier
+Narcian,Binding,Male,Spring,Vernal General,Lance,Flier
+Guinivere,Binding,Female,Original,Princess of Bern,Blue Tome,Infantry
+Melady,Binding,Female,Original,Crimson Rider,Lance,Flier
+Galle,Binding,Male,Original,Azure Rider,Lance,Flier
+Saul,Binding,Male,Bridal,Minister of Love,Staff,Infantry
+Zelot,Binding,Male,Bridal,Avowed Groom,Axe,Cavalry
+Juno,Binding,Female,Bridal,Soaring Bride,Blue Tome,Flier
+Thea,Binding,Female,Original,Stormy Flier,Lance,Flier
+Shanna,Binding,Female,Original,Sprightly Flier,Lance,Flier
+Shanna,Binding,Female,Bridal,Bridal Novie,Red Bow,Flier
+Niime,Binding,Female,Original,Mountain Hermit,Colorless Tome,Infantry
+Hugh,Binding,Male,Original,Worldly Mage,Red Tome,Infantry
+Sue,Binding,Female,Original,Doe of the Plains,Green Bow,Infantry
+Bartre,Binding,Male,Original,Fearless Warrior,Axe,Infantry
+Bartre,Binding,Male,Spring,Earsome Warrior,Sword,Infantry
+Fir,Binding,Female,Original,Sword Student,Sword,Infantry
+Fir ,Binding,Female,Spring,Student of Spring,Axe,Flier
+Rutger,Binding,Male,Original,Lone Swordsman,Sword,Infantry
+Echidna,Binding,Female,Original,Unyielding Idealist,Axe,Infantry
+Larum,Binding,Female,Original,Sprightly Dancer,Colorless Dagger,Infantry
+Larum,Binding,Female,Bridal,Dancing Bride,Lance,Flier
+Dieck,Binding,Male,Original,Wounded Tiger,Axe,Infantry
+Geese,Binding,Male,Pirate,A Life at Sea,Lance,Infantry
+Gonzalez,Binding,Male,Original,Kindly Bandit,Axe,Infantry
+Sophia,Binding,Female,Original,Nabata Prophet,Red Tome,Infantry
+Sophia,Binding,Female,Halloween,Cobweb Prophet,Blue Tome,Flier
+Sophia,Binding,Female,Bridal,Prescient Bride,Red Tome,Flier
+Fae,Binding,Female,Original,Divine Dragon,Green Dragon,Infantry
+Fae,Binding,Female,Winter,Holiday Dear,Green Dragon,Armoured
+Fae,Binding,Female,Legendary,Childlike Dragon,Blue Dragon,Infantry
+Igrene,Binding,Female,Original,Nabata Protector,Red Bow,Infantry
+Igrene,Binding,Female,Ninja,Ninja of Nabata,Colorless Dagger,Flier
+Idunn,Binding,Female,Original,Dark Priestess,Red Dragon,Armoured
+Idunn,Binding,Female,Spring,Dragonkin Duo,Red Dragon,Armoured
+Idunn,Binding,Female,Ascended,Divine Demon,Blue Dragon,Armoured
+Cath,Binding,Female,Original,Master Thief,Green Dagger,Infantry
+Cath,Binding,Female,Thief,Caper Captain,Blue Tome,Cavalry
+Elimine,Binding,Female,Mythic,Scouring Saint,Staff,Flier
+Eliwood,Blazing,Male,Original,Knight of Lycia,Sword,Cavalry
+Eliwood,Blazing,Male,Valentines,Devoted Love,Lance,Armoured
+Eliwood,Blazing,Male,Legendary,Blazing Knight,Sword,Cavalry
+Eliwood,Blazing,Male,Brave,Marquess Pharae,Lance,Cavalry
+Lyn,Blazing,Female,Original,Lady of the Plains,Sword,Infantry
+Lyn,Blazing,Female,Bridal,Bride of the Plains,Staff,Infantry
+Lyn,Blazing,Female,Brave,Brave Lady,Colorless Bow,Cavalry
+Lyn,Blazing,Female,Valentines,Wind’s Embrace,Blue Tome,Armoured
+Lyn,Blazing,Female,Legendary,Lady of the Wind,Green Bow,Infantry
+Lyn,Blazing,Female,Summer,Lady of the Beach,Blue Bow,Flier
+Lyn,Blazing,Female,Ninja,Ninja-Friend Duo,Colorless Dagger,Flier
+Lyn,Blazing,Female,Festival of Flame,Blazing Whirlwind,Lance,Infantry
+Hector,Blazing,Male,Original,General of Ostia,Axe,Armoured
+Hector,Blazing,Male,Valentines,Just Here to Fight,Axe,Armoured
+Hector,Blazing,Male,Legendary,Marquess of Ostia,Axe,Armoured
+Hector,Blazing,Male,Brave,Brave Warrior,Lance,Armoured
+Hector,Blazing,Male,Halloween,Dressed-Up Duo,Sword,Armoured
+Matthew,Blazing,Male,Original,Faithful Spy,Colorless Dagger,Infantry
+Leila,Blazing,Female,Original,Rose amid Fangs,Colorless Dagger,Infantry
+Leila,Blazing,Female,Thief,Keen Lookout,Red Tome,Flier
+Serra,Blazing,Female,Original,Outspoken Cleric,Staff,Infantry
+Sain,Blazing,Male,Original,Green Lance,Lance,Cavalry
+Kent,Blazing,Male,Original,Crimson Shield,Sword,Cavalry
+Raven,Blazing,Male,Original,Peerless Fighter,Axe,Infantry
+Lucius,Blazing,Male,Original,The Light,Staff,Infantry
+Rebecca,Blazing,Female,Original,Wildflower,Colorless Bow,Infantry
+Pent,Blazing,Male,Bridal,Fancy Fiance,Blue Tome,Cavalry
+Pent,Blazing,Male,Original,Mage General,Green Tome,Infantry
+Louise,Blazing,Female,Bridal,Eternal Devotion,Colorless Bow,Cavalry
+Louise,Blazing,Female,Original,Lady of Violets,Colorless Bow,Infantry
+Erk,Blazing,Male,Original,Studious Mage,Red Tome,Infantry
+Priscilla,Blazing,Female,Original,Delicate Princess,Staff,Cavalry
+Dorcas,Blazing,Male,Original,Serene Warrior,Axe,Infantry
+Dorcas,Blazing,Male,Halloween,Pumpkin Smasher,Axe,Armoured
+Zephiel,Blazing,Male,Winter,Winter’s Crown,Sword,Armoured
+Heath,Blazing,Male,Original,Wandering Knight,Lance,Flier
+Heath,Blazing,Male,Ninja,Wyvern Ninja,Colorless Bow,Flier
+Fiora,Blazing,Female,Summer,Defrosted Illian,Sword,Flier
+Fiora,Blazing,Female,Original,Airborne Warrior,Lance,Flier
+Farina,Blazing,Female,Original,The Great Wing,Lance,Flier
+Florina,Blazing,Female,Original,Lovely Flier,Lance,Flier
+Florina,Blazing,Female,Ascended,Azure-Sky Knight,Colorless Bow,Flier
+Canas,Blazing,Male,Original,Wisdom Seeker,Red Tome,Infantry
+Karel,Blazing,Male,Original,Sword Demon,Sword,Infantry
+Karla,Blazing,Female,Original,Sword Vassal,Sword,Infantry
+Karla,Blazing,Female,Hatari,Sun-Piercing Steel,Lance,Infantry
+Guy,Blazing,Male,Original,Kutolah Blade,Sword,Infantry
+Rath,Blazing,Male,Original,Wolf of Sacae,Green Bow,Cavalry
+Hawkeye,Blazing,Male,Original,Desert Guardian,Axe,Infantry
+Ninian,Blazing,Female,Original,Oracle of Destiny,Blue Dragon,Infantry
+Ninian,Blazing,Female,Bridal,Bright-Eyed Bride,Blue Tome,Flier
+Ninian,Blazing,Female,Fallen,Frozen Heart,Blue Dragon,Infantry
+Ninian,Blazing,Female,Legendary,Ice-Dragon Oracle,Green Dragon,Cavalry
+Nils,Blazing,Male,Original,Bright Bard,Blue Dragon,Infantry
+Nils,Blazing,Male,Halloween,Wandering Star,Green Dragon,Infantry
+Limstella,Blazing,Non-Binary,Original,Living Contruct,Green Tome,Infantry
+Sonia,Blazing,Female,Original,Inhuman Beauty,Blue Tome,Infantry
+Lloyd,Blazing,Male,Original,White Wold,Sword,Infantry
+Linus,Blazing,Male,Original,Mad Dog,Axe,Infantry
+Jaffar,Blazing,Male,Original,Angel of Death,Colorless Dagger,Infantry
+Jaffar,Blazing,Male,Winter,Angel of Night,Green Dagger,Armoured
+Ursula,Blazing,Female,Original,Blue Crow,Blue Tome,Cavalry
+Ursula,Blazing,Female,Summer,Clear-Blue Crow,Colorless Dagger,Cavalry
+Ursula,Blazing,Female,Khadein,Royal-Blue Crow,Green Tome,Cavalry
+Nino,Blazing,Female,Original,Pious Mage,Green Tome,Infantry
+Nino,Blazing,Female,She fly,Pale Flower,Green Tome,Flier
+Nino,Blazing,Female,Winter,Flower of Frost,Blue Tome,Armoured
+Nino,Blazing,Female,Khadein,Spirited Sorcerer,Red Tome,Infantry
+Legault,Blazing,Male,Original,The Hurricane,Colorless Dagger,Infantry
+Bramimond,Blazing,Non-Binary,Mythic,The Enigma,Colorless Tome,Infantry
+Eirika,Sacred Stones,Female,Original,Restoration Lady,Sword,Infantry
+Eirika,Sacred Stones,Female,She horse,Anamnesis Lady,Red Tome,Cavalry
+Eirika,Sacred Stones,Female,Legendary,Graceful Resolve,Sword,Cavalry
+Eirika,Sacred Stones,Female,Winter,Gentle as Snow,Staff,Armoured
+Eirika,Sacred Stones,Female,Young,Twin Refulgence,Sword,Infantry
+Eirika,Sacred Stones,Female,Brave,Pledged Restorer,Lance,Cavalry
+Eirika,Sacred Stones,Female,Summer,Beach Restorer,Green Tome,Flier
+Ephraim,Sacred Stones,Male,Original,Restoration Lord,Lance,Infantry
+Ephraim,Sacred Stones,Male,Legendary,Legendary Lord,Lance,Cavalry
+Ephraim,Sacred Stones,Male,Brave,Sacred Twin Lord,Axe,Armoured
+Ephraim,Sacred Stones,Male,Winter,Sparkling Gallantly,Lance,Armoured
+Ephraim,Sacred Stones,Male,Special Duo,Dynastic Duo,Lance,Infantry
+Seth,Sacred Stones,Male,Original,Silver Knight,Sword,Cavalry
+Seth,Sacred Stones,Male,Summer,Silver-Sea Knight,Axe,Cavalry
+Orson,Sacred Stones,Male,Fallen,Passion’s Folly,Lance,Cavalry
+Colm,Sacred Stones,Male,Original,Capable Thief,Colm,Infantry
+Neimi,Sacred Stones,Female,Original,Tearful Archer,Red Bow,Infantry
+Lute,Sacred Stones,Female,Original,Prodigy,Blue Tome,Infantry
+Lute,Sacred Stones,Female,Summer,Summer Prodigy,Blue Tome,Flier
+Artur,Sacred Stones,Male,Winter,Silver Saint,Green Tome,Armoured
+Ross,Sacred Stones,Male,Original,His Father’s Son,Axe,Infantry
+Innes,Sacred Stones,Male,Original,Regal Strategician,Colorless Bow,Infantry
+Innes,Sacred Stones,Male,Summer,Flawless Form,Axe,Flier
+Innes,Sacred Stones,Male,Young,Frelian Moonlight,Colorless Bow,Infantry
+Tana,Sacred Stones,Female,Original,Winged Princess,Lance,Flier
+Tana,Sacred Stones,Female,Summer,Noble and Nimble,Red Tome,Flier
+Tana,Sacred Stones,Female,Young,Frelian Starlight,Lance,Flier
+Tana,Sacred Stones,Female,Festival of Flame,Soothing Warmth,Green Dagger,Flier
+Lyon,Sacred Stones,Male,Original,Shadow Prince,Red Tome,Infantry
+Lyon,Sacred Stones,Male,Fallen,Demon King,Green Tome,Infantry
+Lyon,Sacred Stones,Male,Young,Grado’s Gaze,Blue Tome,Infantry
+Lyon,Sacred Stones,Male,Summer,Sunlit Prince,Sword,Infantry
+Duessel,Sacred Stones,Male,Original,Obsidian,Lance,Cavalry
+Selena,Sacred Stones,Female,Summer,Sandbar Fluorspar,Green Tome,Cavalry
+Selena,Sacred Stones,Female,Original,Fluorspar,Blue Tome,Cavalry
+Riev,Sacred Stones,Male,Original,Blood Beryl,Riev,Infantry
+Valter,Sacred Stones,Male,Original,Dark Moonstone,Lance,Flier
+Caellach,Sacred Stones,Male,Original,Tiger Eye,Axe,Infantry
+Cormag,Sacred Stones,Male,Original,Aloof Lanceman,Lance,Flier
+Knoll,Sacred Stones,Male,Original,Darkness Watcher,Red Tome,Infantry
+Natasha,Sacred Stones,Female,Original,Sacred Healer,Staff,Infantry
+Amelia,Sacred Stones,Female,Original,Rose of the War,Axe,Infantry
+Joshua,Sacred Stones,Male,Original,Tempest King,Sword,Infantry
+Joshua,Sacred Stones,Male,Summer,Tropical Gambler,Red Bow,Infantry
+Joshua,Sacred Stones,Male,Ascended,Resolute Tempest,Colorless Dagger,Infantry
+Gerik,Sacred Stones,Male,Original,Desert Tiger,Axe,Infantry
+Marisa,Sacred Stones,Female,Original,Crimson Flash,Sword,Infantry
+Marisa,Sacred Stones,Female,Spring,Crimson Rabbit,Lance,Flier
+Tethys,Sacred Stones,Female,Original,Beloved Dancer,Sword,Infantry
+Ewan,Sacred Stones,Male,Original,Eager Student,Red Tome,Infantry
+L’Arachel,Sacred Stones,Female,Original,Princess of Light,Blue Tome,Cavalry
+L’Arachel,Sacred Stones,Female,Halloween,Harvest Princess,Green Tome,Cavalry
+L’Arachel,Sacred Stones,Female,Young,Seeker of Justice,Staff,Cavalry
+Dozla,Sacred Stones,Male,Halloween,Harvest Attendant,Colorless Dagger,Armoured
+Rennac,Sacred Stones,Male,Original,Rich “Merchant”,Green Dagger,Infantry
+Myrrh,Sacred Stones,Female,Original,Great Dragon,Green Dragon,Flier
+Myrrh,Sacred Stones,Female,Halloween,Spooky Monster,Red Dragon,Armoured
+Myrrh,Sacred Stones,Female,Spring,Spring Harmony,Colorless Dragon,Flier
+Myrrh,Sacred Stones,Female,Legendary,Guardian Dragon,Blue Dragon,Flier
+Saleh,Sacred Stones,Male,Spring,Vernal Sage,Axe,Cavalry
+Fomortiis,Sacred Stones,Male,Mythic,Demon King,Colorless Beast,Armoured
+Ike,Path of Radiance,Male,Original,Young Mercenary,Sword,Infantry
+Ike,Path of Radiance,Male,Brave,Brave Mercenary,Axe,Infantry
+Ike,Path of Radiance,Male,Valentines,Stalwart Heart,Sword,Armoured
+Ike,Path of Radiance,Male,Young,Close-Knit Siblings,Sword,Infantry
+Titania,Path of Radiance,Female,Original,Mighty Mercenary,Axe,Cavalry
+Titania,Path of Radiance,Female,Valentines,Warm Knight,Red Tome,Cavalry
+Soren,Path of Radiance,Male,Original,Shrewd Strategic,Green Tome,Infantry
+Soren,Path of Radiance,Male,Valentines,Addled Strategist,Blue Tome,Cavalry
+Soren,Path of Radiance,Male,Young,Hushed Voice,Colorless Tome,Infantry
+Mist,Path of Radiance,Female,Original,Helpful Sister,Staff,Infantry
+Mist,Path of Radiance,Female,Valentines,Purest Spirit,Green Tome,Cavalry
+Greil,Path of Radiance,Male,Valentines,Heroic Exemplar,Axe,Armoured
+Oscar,Path of Radiance,Male,Original,Agile Horseman,Lance,Cavalry
+Boyd,Path of Radiance,Male,Young,Future Great,Axe,Infantry
+Rolf,Path of Radiance,Male,Halloween,Tricky Archer,Colorless Tome,Cavalry
+Shinon,Path of Radiance,Male,Original,Scathing Archer,Colorless Bow,Infantry
+Gatrie,Path of Radiance,Male,Original,Armored Amour,Lance,Armoured
+Mia,Path of Radiance,Female,Original,Lady of Blades,Sword,Infantry
+Mia,Path of Radiance,Female,Young,Budding Blade,Sword,Infantry
+Elincia,Path of Radiance,Female,Original,Lost Princess,Sword,Flier
+Nephenee,Path of Radiance,Female,Original,Fierce Halberdier,Lance,Infantry
+Nephenee,Path of Radiance,Female,Soiree,Sincere Dancer,Colorless Bow,Infantry
+Bertram,Path of Radiance,Male,Fallen,Dread Cavalier,Lance,Cavalry
+Zihark,Path of Radiance,Male,Ninja,Ninja Blademaster,Sword,Infantry
+Sanaki,Path of Radiance,Female,Bridal,Apostle in White,Green Tome,Flier
+Sigrun,Path of Radiance,Female,Bridal,Steadfast Bride,Sword,Flier
+Sigrun,Path of Radiance,Female,Original,Loyal Protector,Lance,Flier
+Tanith,Path of Radiance,Female,Bridal,Forthright Heart,Lance,Flier
+Tanith,Path of Radiance,Female,Original,Bright Blade,Sword,Flier
+Marcia,Path of Radiance,Female,Original,Petulant Knight,Lance,Flier
+Sephiran,Path of Radiance,Male,Winter,Hoary Sovereign,Staff,Armoured
+Astrid,Path of Radiance,Female,Original,Resolute Damsel,Green Bow,Cavalry
+Jill,Path of Radiance,Female,Original,Fiery Dracoknight,Axe,Flier
+Volke,Path of Radiance,Male,Original,Man of Mysteries,Red Dagger,Infantry
+Ashnard,Path of Radiance,Male,Fallen,Mad King,Sword,Flier
+Black Knight,Path of Radiance,Male,Original,Sinister General,Sword,Armoured
+Black Knight,Path of Radiance,Male,Winter,The Night’s Blade,Axe,Armoured
+Petrine,Path of Radiance,Female,Original,Icy Flame-Lancer,Lance,Cavalry
+Ilyana,Path of Radiance,Female,Halloween,Treat Harvester,Blue Tome,Armoured
+Ilyana,Path of Radiance,Female,Original,Hungering Mage,Blue Tome,Infantry
+Ilyana,Path of Radiance,Female,Young,Awakened Appetite,Green Tome,Infantry
+Micaiah,Radiant Dawn,Female,Original,Priestess of Dawn,Blue Tome,Infantry
+Micaiah,Radiant Dawn,Female,Hoshidan Summer,Summer’s Dawn,Red Tome,Infantry
+Micaiah,Radiant Dawn,Female,Brave,Queen of Dawn,Green Tome,Flier
+Micaiah,Radiant Dawn,Female,Bridal,Dawn Wind’s Duo,Colorless Tome,Flier
+Micaiah,Radiant Dawn,Female,Legendary,Radiant Queen,Colorless Tome,Infantry
+Micaiah,Radiant Dawn,Female,Summer,Wavecrest Maiden,Colorless Tome,Cavalry
+Sothe,Radiant Dawn,Male,Original,Zephyr,Colorless Dagger,Infantry
+Sothe,Radiant Dawn,Male,Thief,Rushing Dawn,Green Dagger,Flier
+Soren,Radiant Dawn,Male,Khadein,Wind Tradition,Blue Tome,Infantry
+Shinon,Radiant Dawn,Male,Ninja,Sharptongue Ninja,Red Bow,Infantry
+Rhys,Radiant Dawn,Male,Summer,Gentle Basker,Staff,Infantry
+Mia,Radiant Dawn,Female,Halloween,Moonlit Witch,Staff,Flier
+Mia,Radiant Dawn,Female,Summer,Harmonic Blades,Colorless Dagger,Cavalry
+Jorge,Radiant Dawn,Male,Original,Traveling Peddler,Blue Bow,Infantry
+Pelleas,Radiant Dawn,Male,Original,Ashnard’s Orphan,Red Tome,Infantry
+Ike,Radiant Dawn,Male,Legendary,Vanguard Legend,Sword,Infantry
+Ike ,Radiant Dawn,Male,Fallen,Zeal Unleashed,Sword,Infantry
+Elincia,Radiant Dawn,Female,Hoshidan Summer,Estival Princess,Green Dagger,Infantry
+Elincia,Radiant Dawn,Female,Summer,Seaside Queen,Blue Bow,Flier
+Elincia,Radiant Dawn,Female,Ascended,Devoted Queen,Staff,Flier
+Lucia,Radiant Dawn,Female,Original,Tireless Advisor,Sword,Infantry
+Geoffrey,Radiant Dawn,Male,Original,Realm’s Protector,Lance,Cavalry
+Bastian,Radiant Dawn,Male,Original,Crimea’s Keystone,Green Tome,Infantry
+Ludveck,Radiant Dawn,Male,Original,Rebellious Duke,Axe,Armoured
+Caineghis,Radiant Dawn,Male,Original,Gallia’s Lion King,Colorless Beast,Armoured
+Ranulf,Radiant Dawn,Male,Original,Friend of Nations,Green Beast,Cavalry
+Mordecai,Radiant Dawn,Male,Original,Kindhearted Tiger,Blue Beast,Infantry
+Mordecai,Radiant Dawn,Male,Festival of Flame,Gentle Firetender,Green Beast,Infantry
+Lethe,Radiant Dawn,Female,Original,Gallia’s Valkyrie,Red Beast,Cavalry
+Lethe,Radiant Dawn,Female,New Years,New Year’s Claw,Green Beast,Cavalry
+Kyza,Radiant Dawn,Male,New Years,Tiger of Fortune,Red Beast,Infantry
+Lyre,Radiant Dawn,Female,New Years,Lap Cat of Luxury,Colorless Beast,Cavalry
+Dheginsea,Radiant Dawn,Male,Halloween,Harvest Goldoan,Red Dragon,Armoured
+Kurthnaga,Radiant Dawn,Male,Halloween,Autumn Goldoan,Red Dragon,Infantry
+Ena ,Radiant Dawn,Female,Halloween,Autumn Tactician,Red Dragon,Infantry
+Tibarn,Radiant Dawn,Male,Original,Lord of the Air,Red Beast,Flier
+Tibarn,Radiant Dawn,Male,Pirate,Shipless Pirate,Colorless Beast,Flier
+Rafiel,Radiant Dawn,Male,Bridal,Blessed Wings,Blue Beast,Infantry
+Reyson,Radiant Dawn,Male,Original,White Prince,Green Beast,Flier
+Leanne,Radiant Dawn,Female,Original,Forest’s Song,Colorless Beast,Flier
+Naesala,Radiant Dawn,Male,Original,Sky’s Shadow,Blue Beast,Flier
+Naesala,Radiant Dawn,Male,Pirate,Sea’s Shadow,Red Beast,Flier
+Muarim,Radiant Dawn,Male,Fallen,Raw Instinct,Blue Beast,Infantry
+Vika,Radiant Dawn,Female,Pirate,Sea-Dark Wing,Colorless Beast,Flier
+Nailah,Radiant Dawn,Female,Original,Unflinching Eye,Blue Beast,Infantry
+Nailah,Radiant Dawn,Female,Bridal,Blessed Queen,Green Beast,Infantry
+Nailah,Radiant Dawn,Female,Hatari,Hatari Scorcher,Red Beast,Infantry
+Altina,Radiant Dawn,Female,Mythic,Dawn’s Trueblade,Sword,Flier
+Altina,Radiant Dawn,Female,Winter,Cross-Time Duo,Sword,Infantry
+Sanaki,Radiant Dawn,Female,Original,Begnion’s Apostle,Red Tome,Infantry
+Zelgius,Radiant Dawn,Male,Original,Jet-Black General,Sword,Armoured
+Oliver,Radiant Dawn,Male,Original,Admirer of Beauty,Blue Tome,Infantry
+Haar,Radiant Dawn,Male,Original,Black Tempest,Axe,Flier
+Haar,Radiant Dawn,Male,Ninja,Tempest Runner,Sword,Flier
+Ashera,Radiant Dawn,Female,Mythic,Order Goddess,Colorless Tome,Infantry
+Yune,Radiant Dawn,Female,Mythic,Chaos Goddess,Green Tome,Flier
+Chrom,Awakening,Male,Original,Exalted Prince,Sword,Infantry
+Chrom,Awakening,Male,Spring,Spring Exalt,Axe,Infantry
+Chrom,Awakening,Male,Winter,Gifted Leader,Axe,Armoured
+Chrom,Awakening,Male,He horse,Knight Exalt,Sword,Cavalry
+Chrom,Awakening,Male,Legendary,Crowned Exalt,Blue Bow,Infantry
+Chrom,Awakening,Male,Valentines,Fate-Defying Duo,Red Bow,Infantry
+Chrom,Awakening,Male,Brave,Fated Honor,Lance,Cavalry
+Robin,Awakening,Male,Original,High Deliverer,Blue Tome,Infantry
+Robin,Awakening,Male,Winter,Festive Tactician,Lance,Infantry
+Robin,Awakening,Male,Fallen,Fell Reincarnation,Green Dragon,Armoured
+Robin,Awakening,Male,Halloween,Fall Reincarnation,Colorless Dragon,Armoured
+Robin,Awakening,Male,Legendary,Exalt’s Other Half,Green Tome,Infantry
+Robin,Awakening,Female,Original,Mystery Tactician,Green Tome,Infantry
+Robin,Awakening,Female,Summer,Seaside Tactician,Lance,Infantry
+Robin,Awakening,Female,Legendary,Fell Vessel,Colorless Dragon,Flier
+Robin,Awakening,Female,Halloween,Fall Vessel,Green Dragon,Flier
+Robin,Awakening,Female,Valentines,Tactful Deliverer,Colorless Tome,Armoured
+Robin,Awakening,Female,Rearmed,Fell Tactician,Colourless Dragon,Flier
+Lissa,Awakening,Female,Original,Sprightly Cleric,Staff,Infantry
+Lissa,Awakening,Female,Winter,Pure Joy,Axe,Armoured
+Lissa,Awakening,Female,Valentines,Sweet Celebrant,Staff,Armoured
+Emmeryn,Awakening,Female,Original,Gentle Exalt,Staff,Infantry
+Frederick,Awakening,Male,Original,Polite Knight,Axe,Cavalry
+Frederick,Awakening,Male,Summer,Horizon Watcher,Colorless Dagger,Infantry
+Sully,Awakening,Female,Original,Crimson Knight,Lance,Cavalry
+Stahl,Awakening,Male,Original,Viridian Knight,Sword,Cavalry
+Sumia,Awakening,Female,Original,Maid of Flowers,Lance,Flier
+Maribelle,Awakening,Female,Original,Dire Damsel,Staff,Cavalry
+Miriel,Awakening,Female,Original,Rapier Intellect,Blue Tome,Infantry
+Ricken,Awakening,Male,Original,Shepherd Novice,Green Tome,Infantry
+Cordelia,Awakening,Female,Original,Knight Paragon,Lance,Flier
+Cordelia,Awakening,Female,Bridal,Perfect Bride,Colorless Bow,Infantry
+Cordelia,Awakening,Female,Summer,Knight Paradise,Lance,Cavalry
+Cordelia,Awakening,Female,Winter,Unyielding Snow,Lance,Flier
+Phila,Awakening,Female,Original,Pegasus Master,Lance,Flier
+Libra,Awakening,Male,Original,Fetching Friar,Axe,Infantry
+Gaius,Awakening,Male,Original,Candy Stealer,Colorless Dagger,Infantry
+Gaius,Awakening,Male,Summer,Thief Exposed,Colorless Bow,Infantry
+Donnel,Awakening,Male,Original,Village Hero,Lance,Infantry
+Basilio,Awakening,Male,Original,Feroxi West-Khan,Axe,Infantry
+Flavia,Awakening,Female,Original,Feroxi East-Khan,Sword,Infantry
+Lon’qu,Awakening,Male,Original,Solitary Blade,Sword,Infantry
+Olivia,Awakening,Female,Original,Blushing Beauty,Sword,Infantry
+Olivia,Awakening,Female,Performing,Festival Dancer,Colorless Dagger,Infantry
+Olivia,Awakening,Female,She fly,Sky-High Dancer,Sword,Flier
+Gangrel,Awakening,Male,Original,Plegia’s Mad King,Colorless Dagger,Infantry
+Henry,Awakening,Male,Original,Twisted Mind,Red Tome,Infantry
+Henry,Awakening,Male,Halloween,Happy Vampire,Green Tome,Armoured
+Henry,Awakening,Male,Spring,Peculiar Egg,Colorless Bow,Cavalry
+Tharja,Awakening,Female,Original,Dark Shadow,Red Tome,Infantry
+Tharja,Awkening,Female,Winter,“Normal Girl”,Red Tome,Armoured
+Tharja,Awakening,Female,Bridal,Obsessive Bride,Red Tome,Infantry
+Tharja,Awakening,Female,Plegian,Florid Charmer,Green Tome,Flier
+Mustafa,Awakening,Male,Original,Plegian Champion,Axe,Infantry
+Aversa,Awakening,Female,Original,Dark One,Red Tome,Flier
+Walhart,Awakening,Male,Original,The Conqueror,Axe,Cavalry
+Cervantes,Awakening,Male,Original,Invincible General,Lance,Armoured
+Yen’fay,Awakening,Male,Original,Blade Legend,Sword,Infantry
+Say’ri,Awakening,Female,Original,Chon'sin's Blade,Sword,Infantry
+Virion,Awakening,Male,Original,Elite Archer,Colorless Bow,Infantry
+Cherche,Awakening,Female,Original,Wyvern Friend,Axe,Flier
+Cherche,Awakening,Female,Ninja,Shaded by Wings,Axe,Flier
+Tiki,Awakening,Female,Original,Naga’s Voice,Red Dragon,Infantry
+Tiki,Awakening,Female,Summer,Summering Scion,Axe,Infantry
+Tiki,Awakening,Female,Brave,Fated Divinity,Green Dragon,Infantry
+Gregor,Awakening,Male,Original,Swell Sword,Sword,Infantry
+Nowi,Awakening,Female,Original,Eternal Youth,Blue Dragon,Infantry
+Nowi,Awakening,Female,Halloween,Eternal Witch,Red Tome,Flier
+Panne,Awakening,Female,Original,Proud Taguel,Blue Beast,Cavalry
+Panne,Awakening,Female,New Years,Welcoming Dawn,Red Beast,Cavalry
+Priam,Awakening,Male,Original,Radiant Hero,Sword,Infantry
+Anna,Awakening,Female,Original,Secret Seller,Lance,Infantry
+Lucina,Awakening,Female,Original,Future Witness,Sword,Infantry
+Lucina,Awakening,Female,Spring,Spring Exalt,Blue Tome,Infantry
+Marth,Awakening,Female,Original,Enigmatic Blade,Sword,Infantry
+Lucina,Awakening,Female,Brave,Brave Princess,Lance,Infantry
+Lucina,Awakening,Female,Legendary,Glorious Archer,Blue Bow,Infantry
+Lucina,Awakening,Female,Valentines,Future Fondness,Axe,Armoured
+Owain,Awakening,Male,Original,Chosen One,Sword,Infantry
+Owain,Awakening,Male,Valentines,Devoted Defender,Lance,Cavalry
+Inigo,Awakening,Male,Performing,Indigo Dancer,Green Tome,Infantry
+Inigo,Awakening,Male,Spring,Festival Flower,Green Bow,Cavalry
+Brady,Awakening,Male,Original,Daunting Priest,Staff,Infantry
+Gerome,Awakening,Male,Original,Masked Rider,Axe,Flier
+Yarne,Awakening,Male,Original,Timid Taguel,Green Beast,Cavalry
+Yarne,Awakening,Male,New Years,Hoppy New Year,Blue Beast,Cavalry
+Morgan,Awakening,Male,Original,Lad from Afar,Red Tome,Infantry
+Morgan,Awakening,Male,Fallen,Fated Darkness,Red Tome,Infantry
+Morgan,Awakening,Female,Original,Lass from Afar,Blue Tome,Flier
+Morgan,Awakening,Female,Fallen,Devoted Darkness,Axe,Flier
+Severa,Awakening,Female,Spring,Bitter Blossom,Red Tome,Cavalry
+Noire,Awakening,Female,Summer,Shade Seeker,Colorless Bow,Infantry
+Nah,Awakening,Female,Original,Little Miss,Red Dragon,Infantry
+Kjelle,Awakening,Female,Original,Fair Fighter,Lance,Armoured
+Cynthia,Awakening,Female,Original,Hero Chaser,Lance,Flier
+Naga,Awakening,Female,Mythic,Dragon Divinity,Blue Dragon,Flier
+Corrin,Fates,Male,Original,Fateful Prince,Sword,Infantry
+Corrin,Fates,Male,New Years,Enjoying Tradition,Colorless Bow,Infantry
+Corrin,Fates,Male,Adrift,Dream Prince,Blue Dragon,Infantry
+Corrin,Fates,Male,Fallen,Bloodhound Beast,Blue Dragon,Infantry
+Corrin,Fates,Male,Ninja,Daylight Ninja Act,Lance,Infantry
+Corrin,Fates,Male,Halloween,Celestial Sorcerer,Green Dragon,Infantry
+Corrin,Fates,Female,Original,Fateful Princess,Blue Dragon,Infantry
+Corrin,Fates,Female,Summer,Novice Vacationer,Blue Tome,Flier
+Corrin,Fates,Female,Adrift,Dream Princess,Green Dragon,Infantry
+Corrin,Fates,Female,Fallen,Wailing Soul,Colorless Dragon,Infantry
+Corrin,Fates,Female,Legendary,Child of Dusk,Colorless Dragon,Infantry
+Corrin,Fates,Female,Ninja,Nightfall Ninja Act,Green Tome,Cavalry
+Corrin,Fates,Female,Halloween,Starry Seer,Blue Dragon,Infantry
+Azura,Fates,Female,Original,Lade of the Lake,Lance,Infantry
+Azura,Fates,Female,Performing,Lady of Ballads,Axe,Infantry
+Azura,Fates,Female,New Years,Celebratory Spirit,Axe,Flier
+Azura,Fates,Female,Adrift,Young Songstress,Green Tome,Infantry
+Azura,Fates,Female,Legendary,Vallite Songstress,Blue Tome,Flier
+Azura,Fates,Female,Hatari,Hatari Duet,Green Tome,Cavalry
+Gunter,Fates,Male,Original,Inveterate Soldier,Axe,Cavalry
+Felicia,Fates,Female,Original,Maid Mayhem,Colorless Dagger,Infantry
+Felicia,Fates,Female,Picnic,Off the Menu,Axe,Armoured
+Jakob,Fates,Male,Original,Devoted Servant,Colorless Dagger,Infantry
+Jakob,Fates,Male,Halloween,Devoted Monster,Colorless Bow,Armoured
+Lilith,Fates,Female,Original,Astral Daughter,Blue Dragon,Flier
+Lilith,Fates,Female,Fallen,Silent Broodling,Red Dragon,Flier
+Mikoto,Fates,Female,Adrift,Caring Mother,Staff,Infantry
+Ryoma,Fates,Male,Original,Peerless Samurai,Sword,Infantry
+Ryoma,Fates,Male,Legendary,Supreme Samurai,Sword,Flier
+Ryoma,Fates,Male,Hoshidan Summer,Dancing Samurai,Blue Dagger,Infantry
+Ryoma,Fates,Male,Hot Springs,Samurai at Ease,Lance,Flier
+Saizo,Fates,Male,Original,Angry Ninja,Colorless Dagger,Infantry
+Kagero,Fates,Female,Original,Honorable Ninja,Colorless Dagger,Infantry
+Kagero,Fates,Female,Spring,Spring Ninja,Colorless Dagger,Flier
+Kagero,Fates,Female,Halloween,Beverage Ninja,Green Dagger,Armoured
+Hinoka,Fates,Female,Original,Warrior Princess,Lance,Flier
+Hinoka,Fates,Female,She fly,Blue Sky Warrior,Colorless Bow,Flier
+Hinoka,Fates,Female,Hot Springs,Relaxed Warrior,Green Dagger,Flier
+Hinoka,Fates,Female,Pirate,Fair Pirate Pair,Green Bow,Flier
+Azama,Fates,Male,Original,Carefree Monk,Staff,Infantry
+Setsuna,Fates,Female,Original,Absent Archer,Colorless Bow,Infantry
+Takumi,Fates,Male,Original,Wild Card,Colorless Bow,Infantry
+Takumi,Fates,Male,New Years,Prince of Soup,Colorless Dagger,Infantry
+Takumi,Fates,Male,Fallen,Empty Vessel,Colorless Bow,Infantry
+Takumi,Fates,Male,Summer,Prince at Play,Colorless Bow,Flier
+Takumi,Fates,Male,Valentines,Troubled Heart,Blue Tome,Armoured
+Hinata,Fates,Male,Original,Wild Samurai,Sword,Infantry
+Hinata,Fates,Male,Bridal,Samurai Groom,Axe,Infantry
+Oboro,Fates,Female,Original,Fierce Fighter,Lance,Infantry
+Oboro,Fates,Female,Bridal,Fierce Bride-to-Be,Sword,Infantry
+Sakura,Fates,Female,Original,Loving Priestess,Staff,Infantry
+Sakura,Fates,Female,Halloween,Gentle Nekomata,Colorless Dagger,Infantry
+Sakura,Fates,Female,Hot Springs,Hot-Spring Healer,Staff,Flier
+Hana,Fates,Female,Original,Focused Samurai,Sword,Infantry
+Hana,Fates,Female,Ninja,Focused Ninja,Axe,Infantry
+Hana,Fates,Female,Valentines,Striving Heart,Sword,Armoured
+Subaki,Fates,Male,Original,Perfect Expert,Lance,Flier
+Kaze,Fates,Male,Original,Easygoing Ninja,Colorless Dagger,Infantry
+Orochi,Fates,Female,Original,Merry Diviner,Green Tome,Infantry
+Rinkah,Fates,Female,Original,Scion of Flame,Axe,Infantry
+Rinkah,Fates,Female,Festival of Flame,Consuming Flame,Sword,Infantry
+Kaden,Fates,Male,Original,Kitsune Braggart,Green Beast,Cavalry
+Kaden,Fates,Male,New Years,Refreshed Kitsune,Red Beast,Cavalry
+Garon,Fates,Male,Original,King of Nohr,Red Dragon,Infantry
+Xander,Fates,Male,Original,Paragon Knight,Sword,Cavalry
+Xander,Fates,Male,Spring,Spring Prince,Lance,Cavalry
+Xander,Fates,Male,Summer,Student Swimmer,Axe,Infantry
+Xander,Fates,Male,Hoshidan Summer,Dancing Knight,Colorless Dagger,Infantry
+Xander,Fates,Male,Legendary,Gallant King,Axe,Cavalry
+Laslow,Fates,Male,Original,Dancing Duelist,Sword,Infantry
+Peri,Fates,Female,Original,Playful Slayer,Lance,Cavalry
+Camilla,Fates,Female,Original,Bewitching Beauty,Axe,Flier
+Camilla,Fates,Female,Spring,Spring Princess,Green Tome,Flier
+Camilla,Fates,Female,New Years,Holiday Traveler,Sword,Flier
+Camilla,Fates,Female,Summer,Tropical Beauty,Blue Tome,Flier
+Camilla,Fates,Female,Adrift,Flower of Fantasy,Red Tome,Flier
+Camilla,Fates,Female,Hot Springs,Steamy Secrets,Colorless Dagger,Flier
+Camilla,Fates,Female,Brave,Light of Nohr,Staff,Flier
+Camilla,Fates,Female,Ninja,Midnight Bloom,Red Tome,Flier
+Selena,Fates,Female,Original,Cutting Wit,Sword,Infantry
+Beruka,Fates,Female,Original,Quiet Assassin,Axe,Flier
+Leo,Fates,Male,Original,Sorcerous Prince,Red Tome,Cavalry
+Leo,Fates,Male,Summer,Seashore’s Prince,Red Tome,Infantry
+Leo,Fates,Male,Picnic,Extra Tomatoes,Green Tome,Cavalry
+Leo,Fates,Male,Valentines,Shrouded Heart,Green Bow,Cavalry
+Odin,Fates,Male,Original,Potent Force,Blue Tome,Infantry
+Niles,Fates,Male,Original,Cruel to be Kind,Colorless Bow,Infantry
+Niles,Fates,Male,Halloween,Forbidden Tease,Blue Bow,Armoured
+Elise,Fates,Female,Original,Budding Flower,Staff,Cavalry
+Elise,Fates,Female,Summer,Tropical Flower,Green Tome,Infantry
+Elise,Fates,Female,Hot Springs,Bubbling Flower,Red Dagger,Cavalry
+Elise,Fates,Female,Valentines,Sweetheart Royals,Staff,Cavalry
+Arthur,Fates,Male,Original,Hapless Hero,Axe,Infantry
+Effie,Fates,Female,Original,Army of One,Lance,Armoured
+Effie,Fates,Female,Valentines,Dedicated Heart,Axe,Infantry
+Silas,Fates,Male,Original,Loyal Knight,Lance,Cavalry
+Benny,Fates,Male,Original,Sensitive Soul,Lance,Armoured
+Charlotte,Fates,Female,Bridal,Money Maiden,Lance,Infantry
+Charlotte,Fates,Female,Original,Wily Warrior,Axe,Infantry
+Iago,Fates,Male,Original,Nohr’s Tactician,Red Tome,Infantry
+Hans,Fates,Male,Original,Ambitious Brute,Axe,Infantry
+Flora,Fates,Female,Original,Cold as Ice,Red Dagger,Infantry
+Flora,Fates,Female,Picnic,Signature Dish,Red Dagger,Armoured
+Keaton,Fates,Male,Original,Lupine Collector,Red Beast,Infantry
+Keaton,Fates,Male,New Years,Resolved Wolfskin,Green Beast,Infantry
+Nyx,Fates,Female,Original,Rulebreaker Mage,Red Tome,Infantry
+Kana,Fates,Male,Original,Dragon Spawn,Blue Dragon,Infantry
+Kana,Fates,Female,Original,Dragon Princess,Green Dragon,Infantry
+Shigure,Fates,Male,Performing,Dark Sky Singer,Blue Tome,Infantry
+Shigure,Fates,Male,Original,Uplifting Artist,Lance,Flier
+Dwyer,Fates,Male,Original,Sleepy Butler,Staff,Infantry
+Midori,Fates,Female,Original,Reliable Chemist,Red Bow,Infantry
+Shiro,Fates,Male,Original,Raw Talent,Lance,Infantry
+Kiragi,Fates,Male,Original,Upbeat Archer,Colorless Bow,Infantry
+Selkie,Fates,Female,Original,Free Spirit,Blue Beast,Cavalry
+Selkie,Fates,Female,New Years,New Year's Spirit,Colorless Beast,Cavalry
+Caeldori,Fates,Female,Original,Perfect Angel,Lance,Flier
+Rhajat,Fates,Female,Original,Black Magician,Green Tome,Infantry
+Siegbert,Fates,Male,Original,Future King,Sword,Cavalry
+Forrest,Fates,Male,Original,Fashion Forward,Staff,Cavalry
+Velouria,Fates,Female,Original,Wolf Cub,Colorless Beast,Infantry
+Velouria,Fates,Female,New Years,Renewed Wolfpup,Blue Beast,Infantry
+Ophelia,Fates,Female,Original,Dramatic Heroine,Blue Tome,Infantry
+Ophelia,Fates,Female,Rearmed,Starlit Maiden,Red Tome,Infantry
+Soleil,Fates,Female,Original,Adorable Adorer,Sword,Infantry
+Nina,Fates,Female,Original,Eye Spy,Colorless Bow,Infantry
+Nina,Fates,Female,Thief,Shadowy Figures,Colorless Dagger,Cavalry
+Arete,Fates,Female,Original,Requiem’s Beauty,Red Tome,Cavalry
+Byleth,Three Houses,Male,Original,Tested Professor,Sword,Infantry
+Byleth,Three Houses,Male,Legendary,The Fodlan Star,Green Tome,Infantry
+Byleth,Three Houses,Male,Khadein,Fount of Learning,Blue Tome,Infantry
+Byleth,Three Houses,Female,Original,Proven Professor,Sword,Infantry
+Byleth,Three Houses,Female,Summer,Fell Star’s Duo,Red Tome,Flier
+Byleth,Three Houses,Female,Legendary,The Fodlan Light,Blue Tome,Infantry
+Byleth,Three Houses,Female,Brave,Sublime Light,Colorless Tome,Flier
+Sothis,Three Houses,Female,Mythic,Girl on the Throne,Red Dragon,Infantry
+Sothis,Three Houses,Female,Winter,Silver Specter,Green Dragon,Armoured
+Sothis,Three Houses,Female,Halloween,Bound-Spirit Duo,Blue Dragon,Flier
+Seiros,Three Houses,Female,Mythic,Saint of Legend,Blue Dragon,Infantry
+Rhea,Three Houses,Female,Halloween,Witch of Creation,Green Dragon,Infantry
+Rhea,Three Houses,Female,Fallen,Immaculate One,Colorless Dragon,Armoured
+Edelgard,Three Houses,Female,Original,The Future,Axe,Infantry
+Edelgard,Three Houses,Female,Legendary,Flame Emperor,Axe,Armoured
+Edelgard,Three Houses,Female,Brave,Adrestian Emperor,Axe,Armoured
+Edelgard,Three Houses,Female,Fallen,Hegemon Husk,Colorless Beast,Armoured
+Edelgard,Three Houses,Female,Summer,Sun Empresses,Sword,Armoured
+Hubert,Three Houses,Male,Original,Sinister Servant,Red Tome,Infantry
+Ferdinand,Three Houses,Male,Original,Noblest of Nobles,Lance,Cavalry
+Linhardt,Three Houses,Male,Original,Hevring’s Heir,Staff,Infantry
+Caspar,Three Houses,Male,Summer,Summer Intensity,Axe,Infantry
+Bernadetta,Three Houses,Female,Original,Eternal Loner,Colorless Bow,Cavalry
+Bernadetta,Three Houses,Female,Winter,Frosty Shut-In,Green Tome,Cavalry
+Dorothea,Three Houses,Female,Summer,Solar Songstres,Colorless Dagger,Infantry
+Dorothea,Three Houses,Female,Plegian,Twilit Harmony,Red Tome,Flier
+Dorothea,Three Houses,Female,Winter,Yuletide Dancer,Red Tome,Cavalry
+Petra,Three Houses,Female,Original,Princess of Brigid,Blue Dagger,Flier
+Dimitri,Three Houses,Male,Original,The Protector,Lance,Cavalry
+Dimitri,Three Houses,Male,Brave,King of Faerghus,Lance,Infantry
+Dimitri,Three Houses,Male,Legendary,Savior King,Lance,Infantry
+Dimitri,Three Houses,Male,Fallen,Savage Boar,Lance,Infantry
+Dimitri,Three Houses,Male,Summer,Sky-Blue Lion,Axe,Cavalry
+Dedue,Three Houses,Male,Original,Dimitri’s Vassal,Axe,Armoured
+Felix,Three Houses,Male,Winter,Icy Gift Giver,Blue Bow,Armoured
+Ashe,Three Houses,Male,Summer,Fabled Sea Knight,Lance,Cavalry
+Sylvain,Three Houses,Male,Summer,Hanging with Tens,Green Tome,Cavalry
+Mercedes,Three Houses,Female,Original,Kindly Devotee,Staff,Infantry
+Mercedes,Three Houses,Female,Summer,Unfussed Basker,Red Tome,Cavalry
+Annette,Three Houses,Female,Original,Overachiever,Axe,Infantry
+Annette,Three Houses,Female,Winter,Festive Helper,Colorless Bow,Armoured
+Ingrid,Three Houses,Female,Summer,Solstice Knight,Lance,Flier
+Ingrid,Three Houses,Female,Original,Galatea’s Heir,Lance,Cavalry
+Claude,Three Houses,Male,Original,The Schemer,Colorless Bow,Cavalry
+Claude,Three Houses,Male,Brave,Almyra’s King,Colorless Bow,Flier
+Claude,Three Houses,Male,Legendary,King of Unification,Colorless Bow,Flier
+Claude,Three Houses,Male,Summer,Tropical Trouble,Blue Dagger,Flier
+Lorenz,Three Houses,Male,Summer,Highborn Heat,Red Tome,Infantry
+Rapheal,Three Houses,Male,Plegian,Muscle-Monger,Colorless Bow,Armoured
+Ignatz,Three Houses,Male,Winter,Snowscape Artist,Colorless Bow,Armoured
+Lysisthea,Three Houses,Female,Original,Child Prodigy,Red Tome,Infantry
+Lysisthea,Three Houses,Female,Brave,Earnest Seeker,Red Tome,Infantry
+Lysisthea,Three Houses,Female,Winter,Gifted Students,Colorless Tome,Cavalry
+Marianne,Three Houses,Female,Original,Adopted Daughter,Blue Tome,Infantry
+Marianne,Three Houses,Female,Brave,Serene Adherent,Colorless Tome,Infantry
+Hilda,Three Houses,Female,Original,Idle Maiden,Axe,Infantry
+Hilda,Three Houses,Female,Winter,Holiday Layabout,Lance,Armoured
+Hilda,Three Houses,Female,Summer,Deer’s Two-Piece,Staff,Flier
+Hilda,Three Houses,Female,Ascended,Helping Hand,Axe,Infantry
+Leonie,Three Houses,Female,Summer,Relentless Rays,Colorless Bow,Cavalry
+Yuri,Three Houses,Male,Original,Ashen Valiant,Colorless Dagger,Infantry
+Balthus,Three Houses,Male,Original,King of Grappling,Axe,Infantry
+Constance,Three Houses,Female,Original,Fallen Noble,Red Tome,Flier
+Hapi,Three Houses,Female,Original,Drawn-Out Sigh,Blue Tome,Cavalry
+Aelfric,Three Houses,Male,Original,Custodian Monk,Red Tome,Infantry
+Seteth,Three Houses,Male,Original,Seiros Adherent,Lance,Flier
+Flayn,Three Houses,Female,Original,Playing Innocent,Staff,Flier
+Manuela,Three Houses,Female,Winter,Silver Caroler,Sword,Armoured
+Catherine,Three Houses,Female,Original,Thunder Knight,Sword,Infantry
+Shamir,Three Houses,Female,Original,Archer Apart,Colorless Bow,Infantry
+Shamir,Three Houses,Female,Ninja,Lone-Moon Ninja,Axe,Infantry
+Jeralt,Three Houses,Male,Original,Balde Breaker,Lance,Cavalry
+Gatekeeper,Three Houses,Male,Original,Nothing to Report,Green Tome,Infantry
+Kronya,Three Houses,Female,Original,Gleaming Blade,Colorless Dagger,Infantry
+Solon,Three Houses,Male,Original,Church Shadow,Red Tome,Infantry
+Death Knight,Three Houses,Male,Original,The Reaper,Lance,Cavalry
+Flame Emperor,Three Houses,Female,Original,Bringer of War,Axe,Armoured
+Nemesis,Three Houses,Male,Original,King of Liberation,Sword,Infantry
+Shez,Three Houses,Male,Original,Rising Mercenary,Sword,Infantry
+Shez,Three Houses,Female,Original,Keen Mercenary,Axe,Infantry
+Shez,Three Houses,Female,Legendary,Sharpest Blades,Blue Dagger,Infantry
+Arval,Three Houses,Female,Mythic,Cycle Keeper,Colorless Tome,Infantry
+Morgan,Three Houses,Female,Original,Favored Vassal,Blue Tome,Infantry
+Holst,Three Houses,Male,Original,Hero of Leicester,Sword,Infantry
+Itsuki,Tokyo Mirage,Male,Original,Finding a Path,Sword,Infantry
+Tsubasa,Tokyo Mirage,Female,Original,Madcap Idol,Lance,Flier
+Mamori,Tokyo Mirage,Female,Original,Microwavin’ Idol,Axe,Armoured
+Kiria,Tokyo Mirage,Female,Original,Cool Facade,Red Tome,Infantry
+Eleonora,Tokyo Mirage,Female,Original,Shooting Starlet,Colorless Bow,Infantry
+Alear,Engage,Female,Original,Dragon Child,Sword,Infantry
+Lumera,Engage,Female,Original,Dragon Monarch,Sword,Infantry
+Alfred,Engage,Male,Rearmed,Floral Protector,Lance,Cavalry
+Etie,Engage,Female,Original,Fitness Fighter,Colorless Bow,Infantry
+Celine,Engage,Female,Original,Joyous Royal,Green Tome,Infantry
+Chloe,Engage,Female,Original,Fairy-Tale Flier,Lance,Flier
