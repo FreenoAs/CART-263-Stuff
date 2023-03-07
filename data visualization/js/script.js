@@ -45,46 +45,91 @@ function setup() {
     mostAltsButton();
     heroesButton();
     movementTypeButton();
+    heroSummonerButton();
 }
 
-function movementTypeButton() {
+function heroSummonerButton() {//bring up the hero summoner screen
+    button = createButton("Hero Summoner");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
+    button.mouseClicked(drawHeroSummoner);
+    button.size(100, 25);
+    button.position(width / 1.54, height / 1.1);
+    button.style("font-family", "Bodoni");
+    button.style("font-size", "10px");
+    background(0);
+}
+
+function movementTypeButton() {//changes every characters color to their corresponding movement type in the top left
     button = createButton("Movement Type");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
     button.mouseClicked(drawMovementType);
     button.size(100, 25);
     button.position(width / 2.001, height / 1.1);
     button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
+    background(0);
 }
 
-function heroesButton() {
+function heroesButton() {//returns to the default screen with all the hero information
     button = createButton("All Heroes");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
     button.mouseClicked(drawHeroes);
     button.size(100, 25);
-    button.position(width / 2.85, height / 1.1);
+    button.position(width / 20, height / 1.1);
     button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
+    background(0);
 }
 
-function mostAltsButton() {
+function mostAltsButton() {//displays the units with the most hero variations
     button = createButton("Most Alts");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
     button.mouseClicked(mostAlts);
     button.size(100, 25);
     button.position(width / 5, height / 1.1);
     button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
+    background(0);
 }
 
-function genderDifferenceButton() {
+function genderDifferenceButton() {//color codes the heroes to their gender
     button = createButton("Gender Difference");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
     button.mouseClicked(genderDifference);
     button.size(100, 25);
-    button.position(width / 20, height / 1.1);
+    button.position(width / 2.85, height / 1.1);
     button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
+    background(0);
 }
 
-function drawMovementType() {
+function drawHeroSummoner() {//brings up the hero summon button on the hero summoning screen
+    button.hide(summonHero);
+    if (button.mouseClicked(drawHeroSummoner)) {
+        button.show();
+    } else {
+        button.hide();
+    }
+    button = createButton("Summon");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
+    button.mouseClicked(summonHero);
+    button.size(100, 25);
+    button.position(width / 2.25, height / 2);
+    button.style("font-family", "Bodoni");
+    button.style("font-size", "10px");
     background(0);
+}
+
+function summonHero() { //generates a random hero
+    stroke(10);
+    textSize(20);
+    for (var r = 0; r < table.getRowCount(); r++) {
+        points[r].drawHero();
+    }
+
+}
+
+function drawMovementType() {//changes unit color based on movement type
+    background(0);
+    for (var r = 0; r < table.getRowCount(); r++) {
+        for (var c = 0; c < table.getColumnCount(); c++) {
+            points[r].drawMovementType();
+        }
+    }
     textSize(15);
     fill(255, 55, 0);
     text("Infantry", 50, 50);
@@ -94,14 +139,9 @@ function drawMovementType() {
     text("Flier", 50, 70);
     fill(255, 230, 90);
     text("Armoured", 50, 80);
-    for (var r = 0; r < table.getRowCount(); r++) {
-        for (var c = 0; c < table.getColumnCount(); c++) {
-            points[r].drawMovementType();
-        }
-    }
 }
 
-function drawHeroes() {
+function drawHeroes() {//displays all of the heroes
     background(0);
     for (var r = 0; r < table.getRowCount(); r++) {
         for (var c = 0; c < table.getColumnCount(); c++) {
@@ -110,21 +150,24 @@ function drawHeroes() {
     }
 }
 
-function genderDifference() {
+function genderDifference() {//seperates all the heroes based on gender
     background(0);
-    textSize(15);
-    fill(255, 150, 220);
-    text("Female", 50, 50);
-    fill(0, 0, 255);
-    text("Male", 50, 60);
     for (var r = 0; r < table.getRowCount(); r++) {
         for (var c = 0; c < table.getColumnCount(); c++) {
             points[r].drawGender();
         }
     }
+    textSize(15);
+    fill(255, 150, 220);
+    text("Female", 50, 50);
+    fill(0, 0, 255);
+    text("Male", 50, 60);
+    fill(150);
+    text("Non-Binary", 50, 70);
+
 }
 
-function mostAlts() {
+function mostAlts() {//displays the units with the most alternate variations (most rows)
     background(0);
     for (var r = 0; r < table.getRowCount(); r++) {
         for (var c = 0; c < table.getColumnCount(); c++) {
@@ -134,7 +177,7 @@ function mostAlts() {
     }
 }
 
-class DataPoint {
+class DataPoint {//creates the heroes object
     constructor(Name, Game, Gender, AlternateVariation, Title, Weapon, MovementType) {
         // Add each data point to the object
         this.Name = Name;
@@ -147,7 +190,7 @@ class DataPoint {
         this.x;
         this.y;
     }
-    drawHeroes() {
+    drawHeroes() {//displays all heroes by which game they originate from
         this.x = random(width);
         this.y = random(height);
         noStroke();
@@ -199,7 +242,7 @@ class DataPoint {
             text(this.Name, this.x, this.y);
         }
     }
-    drawGender() {
+    drawGender() {//color codes all heroes by gender
         if (this.Gender == "Female") {
             textSize(5);
             fill(255, 150, 220);
@@ -207,9 +250,12 @@ class DataPoint {
         } else if (this.Gender == "Male") {
             fill(0, 0, 255);
             text(this.Name, this.x, this.y);
+        } else if (this.Gender == "Non-Binary") {
+            fill(150);
+            text(this.Name, this.x, this.y);
         }
     }
-    drawMostAlts() {
+    drawMostAlts() {//increases the font size of the characters with the most amount of alternate variations (rows) 
         if (table.getRowCount(this.AlternateVariation) > 4) {
             textSize(20);
             text(this.Name, this.x, this.y);
@@ -218,7 +264,7 @@ class DataPoint {
             text(this.Name, this.x, this.y);
         }
     }
-    drawMovementType() {
+    drawMovementType() {//color codes units based on their movement type
         if (this.MovementType == "Infantry") {
             textSize(5)
             fill(255, 55, 0);
@@ -236,5 +282,8 @@ class DataPoint {
             fill(255, 230, 90);
             text(this.Name, this.x, this.y);
         } 
+    }
+    drawHero() {//generates random hero above the summon button
+        text(this.Name, width / 2, height / 2);
     }
 }
