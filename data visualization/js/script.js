@@ -20,15 +20,10 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(0);
-       console.log(table.getRowCount() + " total rows in table");
+    console.log(table.getRowCount() + " total rows in table");
     console.log(table.getColumnCount() + " total columns in table");
     let rows = table.findRow('Heroes', 'Game');
-    for (let i = 0; i < rows.length; i++) {
-        print(rows[i].getString('Game'));
-        print(rows[i].length + ' units from Fire Emblem Awakening');
-    }
     for (var r = 0; r < table.getRowCount(); r++) { // Cycle through each row of the table
-        for (var c = 0; c < table.getColumnCount(); c++) {
             points[r] = new DataPoint(table.getString(r, 0),
                     table.getString(r, 1),
                     table.getString(r, 2),
@@ -37,79 +32,67 @@ function setup() {
                     table.getString(r, 5),
                     table.getString(r, 6));
                 // Pass through the values in each row
-            console.log(table.getString(r, c));
+            console.log(table.getString(r,0));
             points[r].drawHeroes();
-        }
-    } 
+    }
     genderDifferenceButton();
     mostAltsButton();
     heroesButton();
     movementTypeButton();
     heroSummonerButton();
-}
+} 
+
 
 function heroSummonerButton() {//bring up the hero summoner screen
     button = createButton("Hero Summoner");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
-    button.mouseClicked(drawHeroSummoner);
+    button.mouseClicked(drawHeroSummoner,deleteButton);
     button.size(100, 25);
     button.position(width / 1.54, height / 1.1);
-    button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
     background(0);
 }
 
 function movementTypeButton() {//changes every characters color to their corresponding movement type in the top left
     button = createButton("Movement Type");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
-    button.mouseClicked(drawMovementType);
+    button.mouseClicked(drawMovementType,deleteButton);
     button.size(100, 25);
     button.position(width / 2.001, height / 1.1);
-    button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
     background(0);
 }
 
 function heroesButton() {//returns to the default screen with all the hero information
     button = createButton("All Heroes");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
-    button.mouseClicked(drawHeroes);
+    button.mouseClicked(drawHeroes,deleteButton);
     button.size(100, 25);
     button.position(width / 20, height / 1.1);
-    button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
     background(0);
 }
 
 function mostAltsButton() {//displays the units with the most hero variations
     button = createButton("Most Alts");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
-    button.mouseClicked(mostAlts);
+    button.mouseClicked(mostAlts,deleteButton);
     button.size(100, 25);
     button.position(width / 5, height / 1.1);
-    button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
     background(0);
 }
 
 function genderDifferenceButton() {//color codes the heroes to their gender
     button = createButton("Gender Difference");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
-    button.mouseClicked(genderDifference);
+    button.mouseClicked(genderDifference,deleteButton);
     button.size(100, 25);
     button.position(width / 2.85, height / 1.1);
-    button.style("font-family", "Bodoni");
-    button.style("font-size", "10px");
+    button.style("font-size", "9px");
     background(0);
 }
 
 function drawHeroSummoner() {//brings up the hero summon button on the hero summoning screen
-    button.hide(summonHero);
-    if (button.mouseClicked(drawHeroSummoner)) {
-        button.show();
-    } else {
-        button.hide();
-    }
     button = createButton("Summon");// button functionailty sourced from here https://editor.p5js.org/dwantilus/sketches/H1MzBzBT-
     button.mouseClicked(summonHero);
     button.size(100, 25);
     button.position(width / 2.25, height / 2);
-    button.style("font-family", "Bodoni");
     button.style("font-size", "10px");
     background(0);
 }
@@ -118,9 +101,14 @@ function summonHero() { //generates a random hero
     stroke(10);
     textSize(20);
     for (var r = 0; r < table.getRowCount(); r++) {
-        points[r].drawHero();
+        for (var c = 0; c < table.getColumnCount(); c++) {
+            table.getString(random(922));
+        }
     }
+}
 
+function deleteButton() {
+    button.hide(drawHeroSummoner);
 }
 
 function drawMovementType() {//changes unit color based on movement type
@@ -187,12 +175,10 @@ class DataPoint {//creates the heroes object
         this.Title = Title;
         this.Weapon = Weapon;
         this.MovementType = MovementType;
-        this.x;
-        this.y;
+        this.x = random(width);
+        this.y = random (height);
     }
     drawHeroes() {//displays all heroes by which game they originate from
-        this.x = random(width);
-        this.y = random(height);
         noStroke();
         textSize(5);
         if (this.Game == "Heroes") {
@@ -256,7 +242,7 @@ class DataPoint {//creates the heroes object
         }
     }
     drawMostAlts() {//increases the font size of the characters with the most amount of alternate variations (rows) 
-        if (table.getRowCount(this.AlternateVariation) > 4) {
+        if (table.getRowCount("Lyn") >= 3) {
             textSize(20);
             text(this.Name, this.x, this.y);
         } else {
@@ -282,8 +268,5 @@ class DataPoint {//creates the heroes object
             fill(255, 230, 90);
             text(this.Name, this.x, this.y);
         } 
-    }
-    drawHero() {//generates random hero above the summon button
-        text(this.Name, width / 2, height / 2);
     }
 }
