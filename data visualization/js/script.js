@@ -251,100 +251,116 @@ class DataPoint {//creates the heroes object (using all of the information as se
         this.flierx = random(width / 4, width / 2);
         this.armouredx = random(width / 2, width / 1.25);
         this.cavalryx = random(width / 1.25, width / 1);
+        this.heroesx = random(width / 55, width / 15);
+        this.mysteryx = random(width / 15, width / 10);
+        this.valentiax = random(width / 10, width / 5);
+        this.geneologyx = random(width / 5, width / 4);
+        this.thraciax = random(width / 4.5, width / 3.5);
+        this.bindingx = random(width / 3, width / 2.5);
+        this.blazingx = random(width / 2, width / 1.75);
+        this.sacredstonesx = random(width / 1.75, width / 1.5);
+        this.pathofradiancex = random(width / 1.5, width / 1.25);
+        this.radiantdawnx = random(width / 1.25, width / 1.1);
+        this.awakeningx = random(width / 1.1, width / 1.05);
+        this.fatesx = random(width / 1.05, width / 1.01);
+        this.threehousesx = random(width / 3.5, width / 3);
+        this.tokyomiragex = random(width / 2.5, width / 2);
+        this.engagex = random(width / 2.5, width / 2);
+
     }
     drawHeroes() {//displays all heroes by which game they originate from
         stroke(5);
         textSize(8);
         if (this.Game == "Heroes") {
             fill(225, 255, 79);
-            heroCircle = ellipse(this.x, this.y, 20);
-            // heroCircle.mouseOver(showHeroInfo);//was not anle to get the mouse over function to work 
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            heroCircle = ellipse(this.heroesx, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);//was not anle to get the mouse over function to work heres where i found it though https://p5js.org/reference/#/p5.Element/mouseOver
+            text(this.Name, this.heroesx, this.y);
+            text(this.Game, this.heroesx, this.y + 5);
         } if (this.Game == "Mystery") {
             fill(25, 30, 220);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.mysteryx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.mysteryx, this.y);
+            text(this.Game, this.mysteryx, this.y + 5);
         } if (this.Game == "Valentia") {
             fill(35, 230, 100);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.valentiax, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.valentiax, this.y);
+            text(this.Game, this.valentiax, this.y + 5);
         } if (this.Game == "Geneology") {
             fill(220, 225, 145);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.geneologyx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.geneologyx, this.y);
+            text(this.Game, this.geneologyx, this.y + 5);
         } if (this.Game == "Thracia") {
             fill(255, 0, 0);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.thraciax, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.thraciax, this.y);
+            text(this.Game, this.thraciax, this.y + 5);
         } if (this.Game == "Binding") {
             fill(255, 0, 0);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.bindingx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.bindingx, this.y);
+            text(this.Game, this.bindingx, this.y + 5);
         } if (this.Game == "Blazing") {
             fill(120, 235, 140);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.blazingx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.blazingx, this.y);
+            text(this.Game, this.blazingx, this.y + 5);
         } if (this.Game == "Sacred Stones") {
             fill(150, 240, 235);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.sacredstonesx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.sacredstonesx, this.y);
+            text(this.Game, this.sacredstonesx, this.y + 5);
         } if (this.Game == "Path of Radiance") {
             fill(90, 160, 200);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.pathofradiancex, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.pathofradiancex, this.y);
+            text(this.Game, this.pathofradiancex, this.y + 5);
         } if (this.Game == "Radiant Dawn") {
             fill(25, 75, 100);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.radiantdawnx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.radiantdawnx, this.y);
+            text(this.Game, this.radiantdawnx, this.y + 5);
         } if (this.Game == "Awakening") {
             fill(0, 135, 255);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.awakeningx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.awakeningx, this.y);
+            text(this.Game, this.awakeningx, this.y + 5);
         } if (this.Game == "Fates") {
             fill(255);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.fatesx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.fatesx, this.y);
+            text(this.Game, this.fatesx, this.y + 5);
         } if (this.Game == "Three Houses") {
             fill(235, 235, 150);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.threehousesx, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.threehousesx, this.y);
+            text(this.Game, this.threehousesx, this.y + 5);
         } if (this.Game == "Tokyo Mirage") {
             fill(255, 55, 210);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.tokyomiragex, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.tokyomiragex, this.y);
+            text(this.Game, this.tokyomiragex, this.y + 5);
         } if (this.Game == "Engage") {
             fill(0, 0, 255);
-            heroCircle = ellipse(this.x, this.y, 20);
+            heroCircle = ellipse(this.engagex, this.y, 20);
             // heroCircle.mouseOver(showHeroInfo);
-            text(this.Name, this.x, this.y);
-            text(this.Game, this.x, this.y + 5);
+            text(this.Name, this.engagex, this.y);
+            text(this.Game, this.engagex, this.y + 5);
         }
     }
     drawGender() {//color codes all heroes by gender
