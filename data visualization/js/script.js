@@ -1,29 +1,26 @@
 /**
-Title of Project
-Author Name
-
-This is a template. You must fill in the title,
-author, and this description to match your project!
+Representation Difference in Fire Emblem Heroes (plus a couple of data generation stuff)
+Anthony Scopacasa
 */
 
 "use strict";
 
 
-let table;
-let points = [];
-let button;
-let buttonSummon;
+let table;//grabs the table
+let points = [];//the array for the all of the hero objects
+let button;//allows the buttons to function on the main screen
+let buttonSummon;//allows for the toggling of the designated buttons (so they can be turned off later)
 let buttonSearch;
 let inputSearch;
+let heroCircle;
 
-function preload() {
+function preload() {//loads the table
     table = loadTable('fire emblem heroes.csv', 'csv', 'header');
 }
 
-function setup() {
+function setup() {//creates the object for every hero
     createCanvas(windowWidth, windowHeight);
     background(0);
-    let rows = table.findRow('Heroes', 'Game');
     for (var r = 0; r < table.getRowCount(); r++) { // Cycle through each row of the table
             points[r] = new DataPoint(table.getString(r, 0),
                     table.getString(r, 1),
@@ -36,7 +33,7 @@ function setup() {
             console.log(table.getString(r,0));
             points[r].drawHeroes();
     }
-    genderDifferenceButton();
+    genderDifferenceButton();//activates each of the designated button function
     mostAltsButton();
     heroesButton();
     movementTypeButton();
@@ -51,6 +48,9 @@ function heroSummonerButton() {//bring up the hero summoner screen
     button.position(width / 1.54, height / 1.1);
     button.style("font-size", "10px");
     background(0);
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
 function movementTypeButton() {//changes every characters color to their corresponding movement type in the top left
@@ -100,26 +100,31 @@ function drawHeroSummoner() {//brings up the hero summon button on the hero summ
 }
 
 function summonHero() { //generates a random hero
-    background(0);
+    background(255);
     stroke(10);
     textSize(20);
     fill(255);
-    points[0].summonHero(table.getRow(Math.floor(Math.random()*922)));//sourced from https://stackoverflow.com/questions/48038491/generate-a-random-integer-in-p5-js
+    points[0].summonHero(table.getRow(Math.floor(Math.random() * 922)));//sourced from https://stackoverflow.com/questions/48038491/generate-a-random-integer-in-p5-js
+    text("Alternate Variation" + "       Character" + "      Game", width / 4.5, height / 2.5);
+    text("Title: ", width / 2.3, height / 2);
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
-function deleteButton() {
+function deleteButton() {//hides the summon button between screens https://editor.p5js.org/xinemata/sketches/EuI7ox8AC
     if (buttonSummon) {
         buttonSummon.hide();
     }
 }
 
-function deleteSearchButton() {
+function deleteSearchButton() {//hides the search button on between screens https://editor.p5js.org/xinemata/sketches/EuI7ox8AC
     if (buttonSearch) {
         buttonSearch.hide();
     }
 }
 
-function deleteInput() {
+function deleteInput() {//hides the text box when switching between screens https://editor.p5js.org/xinemata/sketches/EuI7ox8AC
     if (inputSearch) {
         inputSearch.hide();
     }
@@ -147,6 +152,9 @@ function drawMovementType() {//changes unit color based on movement type
     deleteButton();
     deleteInput();
     deleteSearchButton();
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
 function drawHeroes() {//displays all of the heroes
@@ -160,9 +168,13 @@ function drawHeroes() {//displays all of the heroes
     textSize(15);
     fill(255);
     text("Game Below Character", 50, 50);
+    text("Color Coded By Game", 50, 70);
     deleteButton();
     deleteInput();
     deleteSearchButton();
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
 function genderDifference() {//seperates all the heroes based on gender
@@ -182,28 +194,49 @@ function genderDifference() {//seperates all the heroes based on gender
     deleteButton();
     deleteInput();
     deleteSearchButton();
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
-function generateHero() {
-    let rows = table.findRows(inputSearch.value(''), 'Name');
-        fill(random(255), random(255), random(255));
-    text("Lyn", DataPoint.x, DataPoint.y);
-    console.log(inputSearch.value(''));
-}
-
-function heroSearch() {//displays the units with the most alternate variations (most rows)
+function heroSearch() {//displays the units with the most alternate variations (most rows) (didn't get this to work but it felt technically very impressive)
     background(0);
+    textSize(20);
+    fill(255);
+    text("Search Examples:", 50, 50);
+    text("Lyn", 50, 70);
+    text("Camilla", 50, 90);
+    text("Lucina", 50, 110);
+    text("Corrin", 50, 130);
     inputSearch = createInput();//input referenced from https://p5js.org/examples/dom-input-and-button.html
     inputSearch.position(width / 2, height / 2);
     buttonSearch = createButton('Search');
     buttonSearch.position(width / 2.4, height / 2);
     buttonSearch.mousePressed(generateHero);
     deleteButton();
+    fill(150);
+    textSize(30);
+    text("Fire Emblem", width / 2.2, 50);
 }
 
-class DataPoint {//creates the heroes object
+function showHeroInfo() {
+    text(this.Game, this.x, this.y + 5);
+    text(this.MovementType, this.x, this.y + 10);
+    text(this.AlternateVariation, this.x, this.y + 15);
+    text(this.Weapon, this.x, this.y + 20);
+}
+
+function generateHero() {//generates the amount of alts based on name submitted
+    const hero = inputSearch.value();
+    let rows = table.findRows(hero, 'Name');
+    textSize(8);
+    fill(random(255), random(255), random(255));
+    text(rows, random(width), random(height));
+    console.log(hero);
+}
+
+class DataPoint {//creates the heroes object (using all of the information as seen below)
     constructor(Name, Game, Gender, AlternateVariation, Title, Weapon, MovementType) {
-        // Add each data point to the object
         this.Name = Name;
         this.Game = Game;
         this.Gender = Gender;
@@ -212,69 +245,104 @@ class DataPoint {//creates the heroes object
         this.Weapon = Weapon;
         this.MovementType = MovementType;
         this.x = random(width);
-        this.y = random (height);
+        this.y = random(height);
+        this.genderx = random(width / 2, width);
+        this.infantryx = random(width / 4, width / 55);
+        this.flierx = random(width / 4, width / 2);
+        this.armouredx = random(width / 2, width / 1.25);
+        this.cavalryx = random(width / 1.25, width / 1);
     }
     drawHeroes() {//displays all heroes by which game they originate from
         stroke(5);
-        textSize(5);
+        textSize(8);
         if (this.Game == "Heroes") {
             fill(225, 255, 79);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);//was not anle to get the mouse over function to work 
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Mystery") {
             fill(25, 30, 220);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Valentia") {
             fill(35, 230, 100);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Geneology") {
             fill(220, 225, 145);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Thracia") {
             fill(255, 0, 0);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Binding") {
             fill(255, 0, 0);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Blazing") {
             fill(120, 235, 140);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Sacred Stones") {
             fill(150, 240, 235);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Path of Radiance") {
             fill(90, 160, 200);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Radiant Dawn") {
             fill(25, 75, 100);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Awakening") {
             fill(0, 135, 255);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Fates") {
             fill(255);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Three Houses") {
             fill(235, 235, 150);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Tokyo Mirage") {
             fill(255, 55, 210);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         } if (this.Game == "Engage") {
             fill(0, 0, 255);
+            heroCircle = ellipse(this.x, this.y, 20);
+            // heroCircle.mouseOver(showHeroInfo);
             text(this.Name, this.x, this.y);
             text(this.Game, this.x, this.y + 5);
         }
@@ -284,49 +352,49 @@ class DataPoint {//creates the heroes object
             let rows = table.findRows('Female', 'Gender');
             textSize(5);
             fill(255, 150, 220);
-            ellipse(this.x, this.y, rows.length/20);
+            ellipse(this.x/2, this.y, rows.length / 20);
         } else if (this.Gender == "Male") {
             let rows = table.findRows('Male', 'Gender');
             fill(0, 0, 255);
-            ellipse(this.x, this.y, rows.length/20);
+            ellipse(this.genderx, this.y, rows.length/20);
         } else if (this.Gender == "Non-Binary") {
             let rows = table.findRows('Non-Binary', 'Gender');
             fill(150);
             ellipse(this.x, this.y, rows.length*30);
         }
     }
-    drawMostAlts() {//increases the font size of the characters with the most amount of alternate variations (rows) 
-        fill(random(255), random(255), random(255));
-        //text(, this.x, this.y);
-    }
     drawMovementType() {//color codes units based on their movement type
         if (this.MovementType == "Infantry") {
             textSize(7);
             fill(255, 55, 0);
-            square(this.x, this.y - 10, 25);
-            text(this.Name, this.x, this.y);
-            text(this.AlternateVariation, this.x, this.y + 5);
+            square(this.infantryx, this.y - 10, 25);
+            text(this.Name, this.infantryx, this.y);
+            text(this.AlternateVariation, this.infantryx, this.y + 5);
         } if (this.MovementType == "Cavalry") {
             textSize(7);
             fill(0, 230, 255);
-            square(this.x, this.y - 10, 25, 5, 10);
-            text(this.Name, this.x, this.y);
-            text(this.AlternateVariation, this.x, this.y + 5);
+            square(this.cavalryx, this.y - 10, 25, 5, 10);
+            text(this.Name, this.cavalryx, this.y);
+            text(this.AlternateVariation, this.cavalryx, this.y + 5);
         } if (this.MovementType == "Flier") {
             textSize(7);
             fill(0, 255, 205);
-            ellipse(this.x + 7, this.y, 35);
-            text(this.Name, this.x, this.y);
-            text(this.AlternateVariation, this.x, this.y + 5);
+            ellipse(this.flierx + 7, this.y, 35);
+            text(this.Name, this.flierx, this.y);
+            text(this.AlternateVariation, this.flierx, this.y + 5);
         } if (this.MovementType == "Armoured") {
             textSize(7);
             fill(255, 230, 90);
-            square(this.x, this.y - 10, 25, 5);
-            text(this.Name, this.x, this.y);
-            text(this.AlternateVariation, this.x, this.y + 5);
+            square(this.armouredx, this.y - 10, 25, 5);
+            text(this.Name, this.armouredx, this.y);
+            text(this.AlternateVariation, this.armouredx, this.y + 5);
         } 
     }
     summonHero(row) {
+        fill(random(255), random(255), random(255));
         text(row.arr[0], width / 2, height / 2.2);
+        text(row.arr[1], width / 1.5, height / 2.2);
+        text(row.arr[3], width / 3, height / 2.2);
+        text(row.arr[4], width / 2, height / 2);
     }
 }
