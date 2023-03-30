@@ -14,27 +14,39 @@ let posx = 200;
 let posy = 200;
 let monkey;
 let player1;
-let player2;
-let wallHP = 20;
 let bullet;
-let wall;
+let wallBreakable;
+let wallBreakable2;
+let wallStatic;
+let wallStatic2;
+let wallStatic3;
+let player2;
+let wallHP = 5;
+let wallHP2 = 5;
 let spritex = 300;
 let spritey = 400;
-let spritex2 = 300;
+let spritex2 = 1200;
 let spritey2 = 400;
 
 function preload() {
   player1 = new Sprite(spritex, spritey, 50, 50, 'kinematic');
   player1.img = 'monkeT.jpg';
-  player1.diameter = 70;
+  player1.height = 1000;
+  player1.width = 2000;
   player1.scale = .05;
 }
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   player2 = new Sprite(spritex2, spritey2, 50, 50, 'kinematic');
-  wall = new Sprite(width / 1.05, height / 2, 50, 1000, 'static');
-  if (player1.colliding(wall)) {
+  wallBreakable = new Sprite(width / 2, height / 10, 50, 500, 'static');
+  wallStatic = new Sprite(width / 1.5, height / 2, 50, 500, 'static');
+  wallStatic2 = new Sprite(width / 3, height / 2, 50, 500, 'static');
+  wallBreakable2 = new Sprite(width / 2, height / 1.05, 50, 500, 'static');
+  // wallStatic3 = new Sprite(width / 1.05, height / 2, 50, 1000, 'static');
+  bullet1();
+  bullet2();
+  if (player1.colliding(wallBreakable)) {
     spritex = 300;
     spritey = 400;
   }
@@ -43,12 +55,70 @@ function setup() {
     joystick.calibrate(true);
 }
 
-function draw(){
-  background(100);
-  playArea1();
-  damage();
-  console.log(wallHP);
+function bullet1() {
+  bullet = new Sprite(player1.x - 500, player1.y, 30);
+  bullet.overlaps(bullet);
 }
+
+function bullet2() {
+  bullet2 = new Sprite(player1.x - 500, player1.y, 30);
+  bullet2.overlaps(bullet);
+}
+
+function draw() {
+  background(100);
+  wallBreakable.text = wallHP;
+  wallBreakable2.text = wallHP2;
+  playArea1();
+  playArea2();
+  if (wallBreakable.collides(bullet)) {
+    wallHP--
+    bullet.remove();
+    if (wallHP == 0) {
+      wallBreakable.remove();
+    } 
+  }
+  if (wallBreakable.collides(bullet2)) {
+    wallHP--
+    bullet2.remove();
+    if (wallHP == 0) {
+      wallBreakable.remove();
+    } 
+  }
+  if (wallBreakable2.collides(bullet)) {
+    wallHP2--
+    bullet.remove();
+    if (wallHP == 0) {
+      wallBreakable2.remove();
+    } 
+  }
+  if (wallBreakable2.collides(bullet2)) {
+    wallHP2--
+    bullet2.remove();
+    if (wallHP == 0) {
+      wallBreakable2.remove();
+    } 
+  }
+  if (bullet.collides(player2)) {
+    textSize(100);
+    text("PLAYER 1 WINS", width / 4, height / 2);
+    player2.remove();
+  }
+  if (bullet2.collides(player1)) {
+    text("PLAYER 2 WINS", width / 4, height / 2);
+    player1.remove();
+  }
+  player1.collide(wallBreakable);
+  player1.collide(wallBreakable2);
+  player1.collide(wallStatic);
+  player1.collide(wallStatic2);
+  player2.collide(wallBreakable);
+  player2.collide(wallBreakable2);
+  player2.collide(wallStatic);
+  player2.collide(wallStatic2);
+  player1.debug = mouse.pressing();
+}
+
 
 function playArea1() {
   if (joystick.getButtonPressedByIndex(0,12)) {
@@ -64,43 +134,41 @@ function playArea1() {
     player1.x--;
   }
   if (contro.presses('a')) {
-    bullet = new Sprite(player1.x + 40, player1.y, 30);
+    bullet = new Sprite(player1.x + 70, player1.y, 30);
     bullet.vel.x = 10;
-    if (bullet.collides(wall)) {
-      wallHp--
-      bullet.visible = false;
-      console.log('hit');
-      if (wallHP == 0) {
-        wall.remove();
-      } 
-    }
+    setInterval(bulletTimeout1, 7000);
   }  
 }
 
-// function playArea2() {
-//   if (joystick.getButtonPressedByIndex(0,12)) {
-//     player2.y--;
-//   }
-//   if (joystick.getButtonPressedByIndex(0,13)) {
-//     player2.y++;
-//   }
-//   if (joystick.getButtonPressedByIndex(0,15)) {
-//     player2.x++;
-//   }
-//   if (joystick.getButtonPressedByIndex(0,14)) {
-//     player2.x--;
-//   }
-//   if (contro.presses('a')) {
-//     bullet = new Sprite(player1.x + 40, player1.y, 30);
-//     bullet.vel.x = 10;
-//   }
-// }
+function playArea2() {
+  if (kb.pressing('up')) {
+    console.log("up");
+    player2.y--;
+  }
+  if (kb.pressing('down')) {
+    player2.y++;
+  }
+  if (kb.pressing('right')) {
+    player2.x++;
+  }
+  if (kb.pressing('left')) {
+    player2.x--;
+  }
+  if (kb.presses('space')) {
+    bullet2 = new Sprite(player2.x - 40, player2.y, 30);
+    bullet2.vel.x = -10;
+    setInterval(bulletTimeout2, 7000);
+  }  
+}
 
-function damage() {
-  
+function bulletTimeout1() {
+  bullet.remove();
+}
+
+function bulletTimeout2() {
+  bullet2.remove();
 }
 
 function onJoystick(e) {
   console.log("onJoystick", e);
 }
-
