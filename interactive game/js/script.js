@@ -30,15 +30,17 @@ let spritey2 = 400;
 
 function preload() {
   player1 = new Sprite(spritex, spritey, 50, 50, 'kinematic');
-  player1.img = 'monkeT.jpg';
-  player1.height = 1000;
-  player1.width = 2000;
-  player1.scale = .05;
+  player1.img = 'monkeyleft.png';
+  player1.height = 100;
+  player1.width = 60;
+  player2 = new Sprite(spritex2, spritey2, 50, 50, 'kinematic');
+  player2.img = 'monkeyright.png';
+  player2.height = 100;
+  player2.width = 60;
 }
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  player2 = new Sprite(spritex2, spritey2, 50, 50, 'kinematic');
   wallBreakable = new Sprite(width / 2, height / 10, 50, 500, 'static');
   wallStatic = new Sprite(width / 1.5, height / 2, 50, 500, 'static');
   wallStatic2 = new Sprite(width / 3, height / 2, 50, 500, 'static');
@@ -99,12 +101,13 @@ function draw() {
       wallBreakable2.remove();
     } 
   }
-  if (bullet.collides(player2)) {
+  if (bullet.collided(player2)) {
     textSize(100);
     text("PLAYER 1 WINS", width / 4, height / 2);
     player2.remove();
   }
-  if (bullet2.collides(player1)) {
+  if (bullet2.collided(player1)) {
+    textSize(100);
     text("PLAYER 2 WINS", width / 4, height / 2);
     player1.remove();
   }
@@ -117,6 +120,7 @@ function draw() {
   player2.collide(wallStatic);
   player2.collide(wallStatic2);
   player1.debug = mouse.pressing();
+  player2.debug = mouse.pressing();
 }
 
 
@@ -136,28 +140,40 @@ function playArea1() {
   if (contro.presses('a')) {
     bullet = new Sprite(player1.x + 70, player1.y, 30);
     bullet.vel.x = 10;
-    setInterval(bulletTimeout1, 7000);
+    bullet.life = 60;
   }  
 }
 
 function playArea2() {
-  if (kb.pressing('up')) {
-    console.log("up");
+  if (joystick.getButtonPressedByIndex(1,12)) {
     player2.y--;
   }
-  if (kb.pressing('down')) {
+  if (joystick.getButtonPressedByIndex(1,13)) {
     player2.y++;
   }
-  if (kb.pressing('right')) {
+  if (joystick.getButtonPressedByIndex(1,15)) {
     player2.x++;
   }
-  if (kb.pressing('left')) {
+  if (joystick.getButtonPressedByIndex(1,14)) {
     player2.x--;
   }
-  if (kb.presses('space')) {
+  // if (kb.pressing('up')) {
+  //   console.log("up");
+  //   player2.y--;
+  // }
+  // if (kb.pressing('down')) {
+  //   player2.y++;
+  // }
+  // if (kb.pressing('right')) {
+  //   player2.x++;
+  // }
+  // if (kb.pressing('left')) {
+  //   player2.x--;
+  // }
+  if (kb.presses('space') || contro.presses('b')) {
     bullet2 = new Sprite(player2.x - 40, player2.y, 30);
     bullet2.vel.x = -10;
-    setInterval(bulletTimeout2, 7000);
+    bullet2.life = 60;
   }  
 }
 
