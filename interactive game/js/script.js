@@ -69,35 +69,38 @@ function bullet2() {
 
 function draw() {
   background(100);
+  textSize(20);
+  text("ControlsP1: D-Pad & X to shoot", 50, 50);
+  text("ControlsP2: D-Pad & SpaceBar(sorry) to shoot", width/1.5, 50);
   wallBreakable.text = wallHP;
   wallBreakable2.text = wallHP2;
   playArea1();
   playArea2();
-  if (wallBreakable.collides(bullet)) {
+  if (wallBreakable.collided(bullet)) {
     wallHP--
     bullet.remove();
     if (wallHP == 0) {
       wallBreakable.remove();
     } 
   }
-  if (wallBreakable.collides(bullet2)) {
+  if (wallBreakable.collided(bullet2)) {
     wallHP--
     bullet2.remove();
     if (wallHP == 0) {
       wallBreakable.remove();
     } 
   }
-  if (wallBreakable2.collides(bullet)) {
+  if (wallBreakable2.collided(bullet)) {
     wallHP2--
     bullet.remove();
-    if (wallHP == 0) {
+    if (wallHP2 == 0) {
       wallBreakable2.remove();
     } 
   }
-  if (wallBreakable2.collides(bullet2)) {
+  if (wallBreakable2.collided(bullet2)) {
     wallHP2--
     bullet2.remove();
-    if (wallHP == 0) {
+    if (wallHP2 == 0) {
       wallBreakable2.remove();
     } 
   }
