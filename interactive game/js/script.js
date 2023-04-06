@@ -9,18 +9,11 @@ https://github.com/Vamoss/p5.joystick
 */
 
 var joystick;
+var contro;
 
 let posx = 200;
 let posy = 200;
 let monkey;
-let player1;
-let bullet;
-let wallBreakable;
-let wallBreakable2;
-let wallStatic;
-let wallStatic2;
-let wallStatic3;
-let player2;
 let wallHP = 5;
 let wallHP2 = 5;
 let spritex = 300;
@@ -30,53 +23,87 @@ let spritey2 = 400;
 let bananaP1;
 let bananaP2;
 
+
 function preload() {
-  player1 = new Sprite(spritex, spritey, 50, 50, 'kinematic');
+  joystick = createJoystick();
+  if(!joystick.calibrated())
+    joystick.calibrate(true);
+  player1 = new Sprite(spritex, spritey, 50, 50, 'dynamic');
   player1.img = 'player 2.png';
-  player1.height = 130;
-  player1.width = 100;
-  player2 = new Sprite(spritex2, spritey2, 50, 50, 'kinematic');
+  player1.scale = .5
+  player1.height = 50;
+  player1.width = 50;
+  player1.rotationLock = true;
+  player2 = new Sprite(spritex2, spritey2, 50, 50, 'dynamic');
   player2.img = 'player 1.png';
-  player2.height = 130;
-  player2.width = 100;
+  player2.scale = .5;
+  player2.height = 50;
+  player2.width = 50;
+  player2.rotationLock = true;
   wallBreakable = new Sprite(700, 50, 150, 90, 'static');
   wallBreakable.img = 'breakable rocks.png';
   wallBreakable2 = new Sprite(700, 700, 150, 90, 'static');
   wallBreakable2.img = 'breakable rocks.png';
-  bananaP1 = new Sprite(100, 400, 50, 50, 'static');
+  bananaP1 = new Sprite(1080, 400, 50, 50, 'static');
   bananaP1.img = 'banana2.png';
-  bananaP2 = new Sprite(1400, 400, 50, 50, 'static');
+  bananaP1.scale = .5;
+  bananaP1.height = 50;
+  bananaP1.width = 50;
+  bananaP2 = new Sprite(1230, 130, 50, 50, 'static');
   bananaP2.img = 'banana1.png';
+  bananaP2.scale = .5;
+  bananaP2.height = 50;
+  bananaP2.width = 50;
+  bullet = new Sprite(player1.x - 500, player1.y, 30);
+  bullet2 = new Sprite(player1.x - 500, player1.y, 30);
 }
 
 function setup() {
+  bg = loadImage('bg-04.png');
   createCanvas(window.innerWidth, window.innerHeight);
-  wallStatic = new Sprite(width / 1.5, height / 2, 50, 500, 'static');
-  wallStatic2 = new Sprite(width / 3, height / 2, 50, 500, 'static');
-  // wallStatic3 = new Sprite(width / 1.05, height / 2, 50, 1000, 'static');
-  bullet1();
-  bullet2();
+  wallStatic = new Sprite(width / 1.39, height / 1.6, 210, 70, 'static');
+  wallStatic2 = new Sprite(width / 1.77, height / 1.8, 400, 70, 'static');
+  wallStatic3 = new Sprite(width / 2.5, height / 1.75, 170, 40, 'static');
+  wallStatic4 = new Sprite(width / 2.14, height / 2.3, 120, 150, 'static');
+  wallStatic5 = new Sprite(width / 1.66, height / 2.6, 290, 70, 'static');
+  wallStatic6 = new Sprite(width / 1.278, height / 2.6, 25, 460, 'static');
+  wallStatic7 = new Sprite(width / 1.1, height / 2.3, 50, 600, 'static');
+  wallStatic8 = new Sprite(width / 1.187, height / 20, 150, 70, 'static');
+  wallStatic9 = new Sprite(width / 2.3, height / 6, 1000, 70, 'static');
+  wallStatic10 = new Sprite(width / 4.6, height / 2.65, 350, 80, 'static');
+  wallStatic11 = new Sprite(width / 6, height / 2.05, 200, 80, 'static');
+  wallStatic12 = new Sprite(width / 11, height / 3.7, 50, 80, 'static');
+  wallStatic13 = new Sprite(width / 6.5, height / 1.37, 50, 290, 'static');
+  wallStatic14 = new Sprite(width / 3.5, height / 1.24, 50, 160, 'static');
+  wallStatic15 = new Sprite(width / 2.3, height / 1.24, 400, 160, 'static');
+  wallStatic16 = new Sprite(width / 1.35, height / 1.24, 500, 50, 'static');
+  wallStatic17 = new Sprite(width / 4.5, height / 1.06, 200, 50, 'static');
+  wallStatic.visible = false;
+  wallStatic2.visible = false;
+  wallStatic3.visible = false;
+  wallStatic4.visible = false;
+  wallStatic5.visible = false;
+  wallStatic6.visible = false;
+  wallStatic7.visible = false;
+  wallStatic8.visible = false;
+  wallStatic9.visible = false;
+  wallStatic10.visible = false;
+  wallStatic11.visible = false;
+  wallStatic12.visible = false;
+  wallStatic13.visible = false;
+  wallStatic14.visible = false;
+  wallStatic15.visible = false;
+  wallStatic16.visible = false;
+  wallStatic17.visible = false;
   if (player1.collided(wallBreakable)) {
     spritex = 300;
     spritey = 400;
   }
-  joystick = createJoystick();
-  if(!joystick.calibrated())
-    joystick.calibrate(true);
 }
 
-function bullet1() {
-  bullet = new Sprite(player1.x - 500, player1.y, 30);
-  bullet.overlaps(bullet);
-}
-
-function bullet2() {
-  bullet2 = new Sprite(player1.x - 500, player1.y, 30);
-  bullet2.overlaps(bullet);
-}
 
 function draw() {
-  background(100);
+  forrest();
   textSize(20);
   text("ControlsP1: D-Pad & X to shoot", 50, 50);
   text("ControlsP2: D-Pad & SpaceBar(sorry) to shoot", width / 1.5, 50);
@@ -117,39 +144,33 @@ function draw() {
     } 
   }
   if (bullet.collided(player2)) {
-    textSize(100);
-    text("PLAYER 1 WINS", width / 4, height / 2);
     player2.remove();
   }
   if (bullet2.collided(player1)) {
     player1.remove();
   }
-  if (player2.collided(bananaP1)) {
+  if (player2.overlapping(bananaP1)) {
     bananaP1.remove();
     console.log("banana touch");
-    // textSize(100);
-    // text("PLAYER 2 WINS", width / 4, height / 2);
+    textSize(100);
+    text("PLAYER 2 WINS", width / 4, height / 2);
   }
-  // player1.collided(wallBreakable);
-  // player1.collided(wallBreakable2);
-  // player1.collided(wallStatic);
-  // player1.collided(wallStatic2);
-  // player2.collided(wallBreakable);
-  // player2.collided(wallBreakable2);
-  // player2.collided(wallStatic);
-  // player2.collided(wallStatic2);
-  wallStatic.collides(player2);
-  wallStatic2.collides(player2);
-  wallBreakable.collides(player2);
-  wallBreakable2.collides(player2);
-  wallStatic.collides(player1);
-  wallStatic2.collides(player1);
-  wallBreakable.collides(player1);
-  wallBreakable2.collides(player1);
+  if (player1.overlapping(bananaP2)) {
+    bananaP2.remove();
+    console.log("banana touch");
+    textSize(100);
+    text("PLAYER 1 WINS", width / 4, height / 2);
+  }
   player1.debug = mouse.pressing();
   player2.debug = mouse.pressing();
   wallBreakable.debug = mouse.pressing();
   bananaP2.debug = mouse.pressing();
+  wallStatic.debug = mouse.pressing();
+}
+
+function forrest() {
+  background(bg);
+
 }
 
 
@@ -161,13 +182,16 @@ function playArea1() {
     player1.move(2, 'down', 20);
   }
   if (joystick.getButtonPressedByIndex(0,15)) {
-    player1.move(2, 'right', 20);
+    //player1.move(2, 'right', 20);
+    player1.applyForce(10, 0, player1.x, player1.y);
   }
   if (joystick.getButtonPressedByIndex(0,14)) {
     player1.move(2, 'left', 20);
   }
-  if (contro.presses('a')) {
+  if (contro[0] && contro[0].presses('a')) {
     bullet = new Sprite(player1.x + 70, player1.y, 30);
+    bullet.img = 'coconut.png';
+    bullet.scale = .5;
     bullet.vel.x = 10;
     bullet.life = 60;
   }  
@@ -175,32 +199,21 @@ function playArea1() {
 
 function playArea2() {
   if (joystick.getButtonPressedByIndex(1, 12)) {
-    player2.move(2, 'up', 20);
+    player2.move(2, 'up', 10);
   }
   if (joystick.getButtonPressedByIndex(1, 13)) {
-    player2.move(2, 'down', 20);
+    player2.move(2, 'down', 10);
   }
   if (joystick.getButtonPressedByIndex(1, 15)) {
-    player2.move(2, 'right', 20);
+    player2.move(2, 'right', 10);
   }
   if (joystick.getButtonPressedByIndex(1, 14)) {
-    player2.move(2, 'left', 20);
+    player2.move(2, 'left', 10);
   }
-  // if (kb.pressing('up')) {
-  //   console.log("up");
-  //   player2.y--;
-  // }
-  // if (kb.pressing('down')) {
-  //   player2.y++;
-  // }
-  // if (kb.pressing('right')) {
-  //   player2.x++;
-  // }
-  // if (kb.pressing('left')) {
-  //   player2.x--;
-  // }
-  if (kb.presses('space') || contro.presses('a')) {
+  if (contro[1] && contro[1].presses('a')) {
     bullet2 = new Sprite(player2.x - 40, player2.y, 30);
+    bullet2.img = 'coconut.png';
+    bullet2.scale = .5;
     bullet2.vel.x = -10;
     bullet2.life = 60;
   }
