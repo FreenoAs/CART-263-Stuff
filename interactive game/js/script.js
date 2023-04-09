@@ -9,40 +9,38 @@ https://github.com/Vamoss/p5.joystick
 */
 
 var joystick;
-var contro;
 
 let posx = 200;
 let posy = 200;
 let monkey;
 let wallHP = 5;
 let wallHP2 = 5;
-let spritex = 300;
-let spritey = 400;
-let spritex2 = 1200;
-let spritey2 = 400;
 let bananaP1;
 let bananaP2;
+let scoreP1 = 0;
+let scoreP2 = 0;
+
 
 
 function preload() {
   joystick = createJoystick();
   if(!joystick.calibrated())
     joystick.calibrate(true);
-  player1 = new Sprite(spritex, spritey, 50, 50, 'dynamic');
+  player1 = new Sprite(1100, 300, 50, 50, 'dynamic');
   player1.img = 'player 2.png';
   player1.scale = .5
   player1.height = 50;
   player1.width = 50;
   player1.rotationLock = true;
-  player2 = new Sprite(spritex2, spritey2, 50, 50, 'dynamic');
+  player2 = new Sprite(1250, 200, 50, 50, 'dynamic');
   player2.img = 'player 1.png';
   player2.scale = .5;
   player2.height = 50;
   player2.width = 50;
   player2.rotationLock = true;
-  wallBreakable = new Sprite(700, 50, 150, 90, 'static');
+  wallBreakable = new Sprite(720, 220, 150, 90, 'static');
   wallBreakable.img = 'breakable rocks.png';
-  wallBreakable2 = new Sprite(700, 700, 150, 90, 'static');
+  wallBreakable2 = new Sprite(700, 505, 150, 90, 'static');
   wallBreakable2.img = 'breakable rocks.png';
   bananaP1 = new Sprite(1080, 400, 50, 50, 'static');
   bananaP1.img = 'banana2.png';
@@ -54,8 +52,8 @@ function preload() {
   bananaP2.scale = .5;
   bananaP2.height = 50;
   bananaP2.width = 50;
-  bullet = new Sprite(player1.x - 500, player1.y, 30);
-  bullet2 = new Sprite(player1.x - 500, player1.y, 30);
+  bullet = new Sprite(player1.x - 1500, player1.y, 30);
+  bullet2 = new Sprite(player1.x - 1500, player1.y, 30);
 }
 
 function setup() {
@@ -151,15 +149,57 @@ function draw() {
   }
   if (player2.overlapping(bananaP1)) {
     bananaP1.remove();
-    console.log("banana touch");
-    textSize(100);
-    text("PLAYER 2 WINS", width / 4, height / 2);
+    bananaP2.remove();
+    player1 = new Sprite(1100, 300, 50, 50, 'dynamic');
+    player2 = new Sprite(1250, 200, 50, 50, 'dynamic');
+    player1.remove();
+    player2.remove();
+    // wallBreakable.remove();
+    // wallBreakable.remove();
+    // wallStatic.remove();
+    // wallStatic2.remove();
+    // wallStatic3.remove();
+    // wallStatic4.remove();
+    // wallStatic5.remove();
+    // wallStatic6.remove();
+    // wallStatic7.remove();
+    // wallStatic8.remove();
+    // wallStatic9.remove();
+    // wallStatic10.remove();
+    // wallStatic11.remove();
+    // wallStatic12.remove();
+    // wallStatic13.remove();
+    // wallStatic14.remove();
+    // wallStatic15.remove();
+    // wallStatic16.remove();
+    // wallStatic17.remove();
   }
   if (player1.overlapping(bananaP2)) {
     bananaP2.remove();
-    console.log("banana touch");
-    textSize(100);
-    text("PLAYER 1 WINS", width / 4, height / 2);
+    bananaP1.remove();
+    player1 = new Sprite(1100, 300, 50, 50, 'dynamic');
+    player2 = new Sprite(1250, 200, 50, 50, 'dynamic');
+    player1.remove();
+    player2.remove();
+    // wallBreakable.remove();
+    // wallBreakable.remove();
+    // wallStatic.remove();
+    // wallStatic2.remove();
+    // wallStatic3.remove();
+    // wallStatic4.remove();
+    // wallStatic5.remove();
+    // wallStatic6.remove();
+    // wallStatic7.remove();
+    // wallStatic8.remove();
+    // wallStatic9.remove();
+    // wallStatic10.remove();
+    // wallStatic11.remove();
+    // wallStatic12.remove();
+    // wallStatic13.remove();
+    // wallStatic14.remove();
+    // wallStatic15.remove();
+    // wallStatic16.remove();
+    // wallStatic17.remove();
   }
   player1.debug = mouse.pressing();
   player2.debug = mouse.pressing();
@@ -188,13 +228,34 @@ function playArea1() {
   if (joystick.getButtonPressedByIndex(0,14)) {
     player1.move(2, 'left', 20);
   }
-  if (contro[0] && contro[0].presses('a')) {
+  if (contro[0] && contro[0].presses('b')) {
     bullet = new Sprite(player1.x + 70, player1.y, 30);
     bullet.img = 'coconut.png';
     bullet.scale = .5;
     bullet.vel.x = 10;
     bullet.life = 60;
   }  
+  if (contro[0] && contro[0].presses('x')) {
+    bullet = new Sprite(player1.x - 70, player1.y, 30);
+    bullet.img = 'coconut.png';
+    bullet.scale = .5;
+    bullet.vel.x = -10;
+    bullet.life = 60;
+  }
+  if (contro[0] && contro[0].presses('a')) {
+    bullet = new Sprite(player1.x, player1.y + 70, 30);
+    bullet.img = 'coconut.png';
+    bullet.scale = .5;
+    bullet.vel.y = 10;
+    bullet.life = 60;
+  }
+  if (contro[0] && contro[0].presses('y')) {
+    bullet = new Sprite(player1.x, player1.y - 70, 30);
+    bullet.img = 'coconut.png';
+    bullet.scale = .5;
+    bullet.vel.y = -10;
+    bullet.life = 60;
+  }
 }
 
 function playArea2() {
@@ -210,21 +271,34 @@ function playArea2() {
   if (joystick.getButtonPressedByIndex(1, 14)) {
     player2.move(2, 'left', 10);
   }
+  if (contro[1] && contro[1].presses('b')) {
+    bullet2 = new Sprite(player2.x + 40, player2.y, 30);
+    bullet2.img = 'coconut.png';
+    bullet2.scale = .5;
+    bullet2.vel.x = 10;
+    bullet2.life = 60;
+  }
   if (contro[1] && contro[1].presses('a')) {
-    bullet2 = new Sprite(player2.x - 40, player2.y, 30);
+    bullet2 = new Sprite(player2.x, player2.y + 40, 30);
+    bullet2.img = 'coconut.png';
+    bullet2.scale = .5;
+    bullet2.vel.y = 10;
+    bullet2.life = 60;
+  }
+  if (contro[1] && contro[1].presses('x')) {
+    bullet2 = new Sprite(player2.x - 70, player2.y, 30);
     bullet2.img = 'coconut.png';
     bullet2.scale = .5;
     bullet2.vel.x = -10;
     bullet2.life = 60;
   }
-}
-
-function bulletTimeout1() {
-  bullet.remove();
-}
-
-function bulletTimeout2() {
-  bullet2.remove();
+  if (contro[1] && contro[1].presses('y')) {
+    bullet2 = new Sprite(player2.x, player2.y - 40, 30);
+    bullet2.img = 'coconut.png';
+    bullet2.scale = .5;
+    bullet2.vel.y = -10;
+    bullet2.life = 60;
+  }
 }
 
 function onJoystick(e) {
