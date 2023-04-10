@@ -1,6 +1,6 @@
 /*
 
-Anthony Scopacasa and Hannah
+Anthony Scopacasa and Hannah Kim
 
 library resources used:
 https://p5play.org/learn/index.html
@@ -57,8 +57,12 @@ function preload() {
 }
 
 function setup() {
-  bg = loadImage('bg-04.png');
+  bg1 = loadImage('bg-04.png');
   createCanvas(window.innerWidth, window.innerHeight);
+  forrestMap();
+}
+
+function forrestMap() {
   wallStatic = new Sprite(width / 1.39, height / 1.6, 210, 70, 'static');
   wallStatic2 = new Sprite(width / 1.77, height / 1.8, 400, 70, 'static');
   wallStatic3 = new Sprite(width / 2.5, height / 1.75, 170, 40, 'static');
@@ -93,18 +97,67 @@ function setup() {
   wallStatic15.visible = false;
   wallStatic16.visible = false;
   wallStatic17.visible = false;
-  if (player1.collided(wallBreakable)) {
-    spritex = 300;
-    spritey = 400;
-  }
+}
+
+function skyMap() {
+  player1.x = 600;
+  player1.y = 230;
+  bananaP1.x = 500;
+  bananaP1.y = 230;
+  player2.x = 900;
+  player2.y = 500;
+  bananaP2.x = 1000
+  bananaP2.y = 500;
+  wallBreakable.x = 600;
+  wallBreakable.y = 440;
+  wallBreakable2.visible = false;
+  wallStaticSky = new Sprite(width / 2.56, height / 1.5, 240, 70, 'static');
+  wallStaticSky2 = new Sprite(width / 1.646, height / 1.73, 400, 40, 'static');
+  wallStaticSky3 = new Sprite(width / 2.03, height / 1.3, 70, 300, 'static');
+  wallStaticSky4 = new Sprite(width / 1.59, height / 1.33, 80, 70, 'static');
+  wallStaticSky5 = new Sprite(width / 2.25, height / 2.4, 530, 60, 'static');
+  wallStaticSky6 = new Sprite(width / 1.2, height / 1.5, 50, 400, 'static');
+  wallStaticSky7 = new Sprite(width / 1.29, height / 3.8, 250, 300, 'static');
+  wallStaticSky8 = new Sprite(width / 2.13, height / 4.8, 120, 260, 'static');
+  wallStaticSky9 = new Sprite(width / 2, height / 15, 1000, 70, 'static');
+  wallStaticSky10 = new Sprite(width / 6.4, height / 2.75, 80, 400, 'static');
+  wallStaticSky11 = new Sprite(width / 4.1, height / 1.63, 200, 80, 'static');
+  wallStaticSky12 = new Sprite(width / 3.56, height / 3.5, 60, 150, 'static');
+  wallStaticSky13 = new Sprite(width / 1.36, height / 1.45, 30, 180, 'static');
+  wallStaticSky14 = new Sprite(width / 1.45, height / 1.28, 100, 20, 'static');
+  wallStaticSky15 = new Sprite(width / 1.5, height / 1.04, 600, 50, 'static');
+  wallStaticSky16 = new Sprite(width / 3, height / 4.5, 100, 50, 'static');
+  wallStaticSky17 = new Sprite(width / 1.68, height / 4.35, 90, 40, 'static');
+  wallStaticSky18 = new Sprite(width / 1.63, height / 3.3, 30, 150, 'static');
+  wallStaticSky19 = new Sprite(width / 1.8, height / 2.5, 150, 90, 'static');
+  wallStaticSky.visible = false;
+  wallStaticSky2.visible = false;
+  wallStaticSky3.visible = false;
+  wallStaticSky4.visible = false;
+  wallStaticSky5.visible = false;
+  wallStaticSky6.visible = false;
+  wallStaticSky7.visible = false;
+  wallStaticSky8.visible = false;
+  wallStaticSky9.visible = false;
+  wallStaticSky10.visible = false;
+  wallStaticSky11.visible = false;
+  wallStaticSky12.visible = false;
+  wallStaticSky13.visible = false;
+  wallStaticSky14.visible = false;
+  wallStaticSky15.visible = false;
+  wallStaticSky16.visible = false;
+  wallStaticSky17.visible = false;
+  wallStaticSky18.visible = false;
+  wallStaticSky19.visible = false;
 }
 
 
 function draw() {
   forrest();
-  textSize(20);
-  text("ControlsP1: D-Pad & X to shoot", 50, 50);
-  text("ControlsP2: D-Pad & SpaceBar(sorry) to shoot", width / 1.5, 50);
+  textSize(50);
+  fill(255, 0, 0);
+  text('Yellow ' + scoreP1, width / 3, 50);
+  text('Green ' + scoreP2, width / 1.7, 50);
   wallBreakable.textSize = '50';
   wallBreakable.textColor = 'red';
   wallBreakable.text = wallHP;
@@ -148,69 +201,66 @@ function draw() {
     player1.remove();
   }
   if (player2.overlapping(bananaP1)) {
-    bananaP1.remove();
-    bananaP2.remove();
-    player1 = new Sprite(1100, 300, 50, 50, 'dynamic');
-    player2 = new Sprite(1250, 200, 50, 50, 'dynamic');
-    player1.remove();
-    player2.remove();
-    // wallBreakable.remove();
-    // wallBreakable.remove();
-    // wallStatic.remove();
-    // wallStatic2.remove();
-    // wallStatic3.remove();
-    // wallStatic4.remove();
-    // wallStatic5.remove();
-    // wallStatic6.remove();
-    // wallStatic7.remove();
-    // wallStatic8.remove();
-    // wallStatic9.remove();
-    // wallStatic10.remove();
-    // wallStatic11.remove();
-    // wallStatic12.remove();
-    // wallStatic13.remove();
-    // wallStatic14.remove();
-    // wallStatic15.remove();
-    // wallStatic16.remove();
-    // wallStatic17.remove();
+    scoreP2++
+    skyMap();
+    sky();
+    wallStatic.x = 5000;
+    wallStatic2.x = 5000;
+    wallStatic3.x = 5000;
+    wallStatic4.x = 5000;
+    wallStatic5.x = 5000;
+    wallStatic6.x = 5000;
+    wallStatic7.x = 5000;
+    wallStatic8.x = 5000;
+    wallStatic9.x = 5000;
+    wallStatic10.x = 5000;
+    wallStatic11.x = 5000;
+    wallStatic12.x = 5000;
+    wallStatic13.x = 5000;
+    wallStatic14.x = 5000;
+    wallStatic15.x = 5000;
+    wallStatic16.x = 5000;
+    wallStatic17.x = 5000;
   }
-  if (player1.overlapping(bananaP2)) {
-    bananaP2.remove();
-    bananaP1.remove();
-    player1 = new Sprite(1100, 300, 50, 50, 'dynamic');
-    player2 = new Sprite(1250, 200, 50, 50, 'dynamic');
-    player1.remove();
-    player2.remove();
-    // wallBreakable.remove();
-    // wallBreakable.remove();
-    // wallStatic.remove();
-    // wallStatic2.remove();
-    // wallStatic3.remove();
-    // wallStatic4.remove();
-    // wallStatic5.remove();
-    // wallStatic6.remove();
-    // wallStatic7.remove();
-    // wallStatic8.remove();
-    // wallStatic9.remove();
-    // wallStatic10.remove();
-    // wallStatic11.remove();
-    // wallStatic12.remove();
-    // wallStatic13.remove();
-    // wallStatic14.remove();
-    // wallStatic15.remove();
-    // wallStatic16.remove();
-    // wallStatic17.remove();
+  if (player2.overlapping(bananaP2)) {
+    scoreP1++
+    skyMap();
+    sky();
+    wallStatic.x = 5000;
+    wallStatic2.x = 5000;
+    wallStatic3.x = 5000;
+    wallStatic4.x = 5000;
+    wallStatic5.x = 5000;
+    wallStatic6.x = 5000;
+    wallStatic7.x = 5000;
+    wallStatic8.x = 5000;
+    wallStatic9.x = 5000;
+    wallStatic10.x = 5000;
+    wallStatic11.x = 5000;
+    wallStatic12.x = 5000;
+    wallStatic13.x = 5000;
+    wallStatic14.x = 5000;
+    wallStatic15.x = 5000;
+    wallStatic16.x = 5000;
+    wallStatic17.x = 5000;
   }
   player1.debug = mouse.pressing();
   player2.debug = mouse.pressing();
   wallBreakable.debug = mouse.pressing();
   bananaP2.debug = mouse.pressing();
-  wallStatic.debug = mouse.pressing();
+  // wallStatic.debug = mouse.pressing();
 }
 
 function forrest() {
-  background(bg);
+  background(bg1);
+}
 
+function sky() {
+  bg1 = loadImage('bg3.png');
+}
+
+function space() {
+  bg1 = loadImage('bg2.png')
 }
 
 
@@ -299,8 +349,4 @@ function playArea2() {
     bullet2.vel.y = -10;
     bullet2.life = 60;
   }
-}
-
-function onJoystick(e) {
-  console.log("onJoystick", e);
 }
