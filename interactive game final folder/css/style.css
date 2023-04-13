@@ -1,0 +1,98 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid; /* Set up the grid and justify/align to center */
+  justify-content: center;
+  align-content: center;
+  height: 100%; /* Body is the height of the viewport */
+  overflow: hidden; /* Hide anything that goes off the window size */
+  cursor: pointer;
+  cursor: url(coco.png), pointer;  
+transform: translate(-0%);  
+  
+}
+
+a{
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+  cursor: url(coco.png), pointer;  
+transform: translate(-0%);
+text-align: center ;
+
+}
+
+input[type= button]{
+  background-color: #121312;
+  border: 5px solid rgb(25, 212, 84);
+}
+
+.click{
+  position: absolute;
+  top: 200px;/* adjust the value as needed */
+  left: 100px; /* adjust the value as needed */
+  z-index: 1;
+}
+
+.button {
+  background-color: #121312;
+  border: 5px solid rgb(25, 212, 84);  
+  align-items: center;
+  position: absolute;
+  display: inline-block;
+  top: 1000px;
+  left: 700px;
+  width:300px;
+  height:50px;
+  color: rgb(8, 6, 6);
+  font-size: 30px;
+  font-family: 'Joystix';
+  padding: 20px 20px;
+  border-radius: 5px;
+  /* cursor: pointer;
+  cursor: url(coco.png), pointer;  
+transform: translate(-0%);   */
+
+}
+
+/* .button:hover {  
+cursor: pointer;
+cursor: url(coco.png), pointer;
+transform: translate(-0%);
+background-color:  rgb(25, 212, 84);
+color: #FFFFFF;
+
+
+}  */
+
+
+.monkey-image {
+  position: absolute;
+  top: 20px;/* adjust the value as needed */
+  left: 300px; /* adjust the value as needed */
+  z-index: 1;
+  cursor: pointer;
+  cursor: url(coco.png), pointer;  
+transform: translate(-0%);  
+}
+
+.sub-container-2 {
+  position: absolute;
+  top: 50px; /* adjust the value as needed */
+  left: 50px; /* adjust the value as needed */
+  z-index: 1;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: 'Joystix';
+  color: #ffffff;
+  font-size: 80px;
+  /* padding-left: 400px;
+  padding-right: 1000px;
+  padding-top: 50px; */
+  cursor: pointer;
+  cursor: url(coco.png), pointer;  
+transform: translate(-0%);  
+}
+
