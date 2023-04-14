@@ -89,14 +89,14 @@ p.big {
   font-family: 'Joystix';
   padding: 20px 20px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: pointer;/*https://www.youtube.com/watch?v=GkEqHB7Lh-Y&ab_channel=OnlineTutorials*/
   cursor: url(coco.png), pointer;  
 transform: translate(-0%);  
 
 }
 
  .button:hover {  
-cursor: pointer;
+cursor: pointer;/*https://www.youtube.com/watch?v=GkEqHB7Lh-Y&ab_channel=OnlineTutorials*/
 cursor: url(coco.png), pointer;
 transform: translate(-0%);
 background-color:  rgb(25, 212, 84);
