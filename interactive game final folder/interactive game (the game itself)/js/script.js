@@ -397,7 +397,7 @@ function draw() {
     wallStaticSky18.x = -5000;
     wallStaticSky19.x = -5000;
   }
-  if (player1.overlapping(bananaSpaceP2)) {//removes the previous collision and displays the victory screen for each respective player upon touching the enemy banana
+  if (player1.overlapping(bananaSpaceP2) && scoreP1 == 2) {//removes the previous collision and displays the victory screen for each respective player upon touching the enemy banana
     scoreP1++;
     bananaSpaceP1.x = -500;
     bananaSpaceP2.x = -500;
@@ -419,7 +419,29 @@ function draw() {
     wallStaticSpace14.x = -5000;
     bg1 = loadImage('assets/winner1.png');
   }
-  if (player2.overlapping(bananaSpaceP1)) {
+  if (player1.overlapping(bananaSpaceP2) && scoreP1 <= 2) {
+    scoreP1++;
+    bananaSpaceP1.x = -500;
+    bananaSpaceP2.x = -500;
+    wallBreakable.x = -500;
+    wallBreakable2.x = -500;
+    wallStaticSpace.x = -5000;
+    wallStaticSpace2.x = -5000;
+    wallStaticSpace3.x = -5000;
+    wallStaticSpace4.x = -5000;
+    wallStaticSpace5.x = -5000;
+    wallStaticSpace6.x = -5000;
+    wallStaticSpace7.x = -5000;
+    wallStaticSpace8.x = -5000;
+    wallStaticSpace9.x = -5000;
+    wallStaticSpace10.x = -5000;
+    wallStaticSpace11.x = -5000;
+    wallStaticSpace12.x = -5000;
+    wallStaticSpace13.x = -5000;
+    wallStaticSpace14.x = -5000;
+    bg1 = loadImage('assets/winner2.png');
+  }
+  if (player2.overlapping(bananaSpaceP1) && scoreP2 ==2) {
     scoreP2++;
     bananaSpaceP1.x = -500;
     bananaSpaceP2.x = -500;
@@ -440,6 +462,28 @@ function draw() {
     wallStaticSpace13.x = -5000;
     wallStaticSpace14.x = -5000;
     bg1 = loadImage('assets/winner2.png');
+  }
+  if (player2.overlapping(bananaSpaceP1) && scoreP2 <=2) {
+    scoreP2++;
+    bananaSpaceP1.x = -500;
+    bananaSpaceP2.x = -500;
+    wallBreakable.x = -500;
+    wallBreakable2.x = -500;
+    wallStaticSpace.x = -5000;
+    wallStaticSpace2.x = -5000;
+    wallStaticSpace3.x = -5000;
+    wallStaticSpace4.x = -5000;
+    wallStaticSpace5.x = -5000;
+    wallStaticSpace6.x = -5000;
+    wallStaticSpace7.x = -5000;
+    wallStaticSpace8.x = -5000;
+    wallStaticSpace9.x = -5000;
+    wallStaticSpace10.x = -5000;
+    wallStaticSpace11.x = -5000;
+    wallStaticSpace12.x = -5000;
+    wallStaticSpace13.x = -5000;
+    wallStaticSpace14.x = -5000;
+    bg1 = loadImage('assets/winner1.png');
   }
 }
 
@@ -498,16 +542,16 @@ function playArea1() {//initiates the controls for each individual player
     bullet.life = 60;
   }
   if (contro[0] && contro[0].presses('r')) {//directional dash
-    player1.move(50, 'down', 10);
+    player1.move(100, 'down', 10);
   }
   if (contro[0] && contro[0].presses('l')) {
-    player1.move(50, 'up', 10);
+    player1.move(100, 'up', 10);
   }
   if (contro[0] && contro[0].presses('rt')) {
-    player1.move(50, 'right', 10);
+    player1.move(100, 'right', 10);
   }
   if (contro[0] && contro[0].presses('lt')) {
-    player1.move(50, 'left', 10);
+    player1.move(100, 'left', 10);
   }
 }
 
@@ -553,15 +597,15 @@ function playArea2() {
     bullet2.life = 60;
   }
   if (contro[1] && contro[1].presses('r')) {//directional dash
-    player2.move(50, 'down', 10);
+    player2.move(100, 'down', 10);
   }
   if (contro[1] && contro[1].presses('l')) {
-    player2.move(50, 'up', 10);
+    player2.move(100, 'up', 10);
   }
   if (contro[1] && contro[1].presses('rt')) {
-    player2.move(50, 'right', 10);
+    player2.move(100, 'right', 10);
   }
   if (contro[1] && contro[1].presses('lt')) {
-    player2.move(50, 'left', 10);
+    player2.move(100, 'left', 10);
   }
 }
